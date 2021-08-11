@@ -1,0 +1,155 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/ObjectContextTags",
+            "Entries": {
+                "Golden Trout": "color_gold, fish_golden_trout, fish_lake",
+                "Kokanee Salmon": "color_red, fish_kokanee_salmon, fish_lake",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Fish",
+            "Entries": {
+                "{{spacechase0.JsonAssets/ObjectId:Golden Trout}}": "Golden Trout/80/smooth/6/12/600 1200/spring summer fall winter/both/689 .4 680 .1/3/.3/.1/0",
+                "{{spacechase0.JsonAssets/ObjectId:Kokanee Salmon}}": "Kokanee Salmon/75/dart/6/12/1100 2000/spring summer fall winter/both/689 .4 680 .1/3/.2/.1/0"
+            },
+            "When": {
+                "HasMod |contains=spacechase0.JsonAssets": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Custom_ESDeepMountains": "18 .9/402 .9/410 .6/418 .7 414 .1 283 .5/269 -1 699 -1 {{spacechase0.JsonAssets/ObjectId:Golden Trout}} -1 {{spacechase0.JsonAssets/ObjectId:Kokanee Salmon}} -1/699 -1 {{spacechase0.JsonAssets/ObjectId:Golden Trout}} -1 {{spacechase0.JsonAssets/ObjectId:Kokanee Salmon}} -1/139 -1 269 -1 699 -1 {{spacechase0.JsonAssets/ObjectId:Golden Trout}} -1 {{spacechase0.JsonAssets/ObjectId:Kokanee Salmon}} -1/269 -1 699 -1 {{spacechase0.JsonAssets/ObjectId:Golden Trout}} -1 {{spacechase0.JsonAssets/ObjectId:Kokanee Salmon}} -1/100 1 101 .31 103 .8 105 .7 106 .1 107 .65 114 .1"
+            },
+            "When": {
+                "HasMod |contains=spacechase0.JsonAssets": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "When": {
+                "HasMod |contains=spacechase0.JsonAssets": true,
+                "HasMod": "FlashShifter.JA.SVE"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Custom_ESDeepMountains",
+                        4
+                    ], // spring
+                    "Value": "{{spacechase0.JsonAssets/ObjectId:King Salmon}} -1",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "Custom_ESDeepMountains",
+                        5
+                    ], // summer
+                    "Value": "{{spacechase0.JsonAssets/ObjectId:King Salmon}} -1",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "LogName": "Aquarium Data",
+            "Action": "EditData",
+            "Target": "Data/AquariumFish",
+            "When": {
+                "HasMod |contains=spacechase0.JsonAssets": true
+            },
+            "Entries": {
+                "{{spacechase0.JsonAssets/ObjectId:Golden Trout}}": "141/fish",
+                "{{spacechase0.JsonAssets/ObjectId:Kokanee Salmon}}": "140/fish",
+                //"{{spacechase0.JsonAssets/ObjectId:Red Herring}}": "55/fish"
+            }
+        },
+        {
+            "LogName": "Aquarium Sprites",
+            "Action": "EditImage",
+            "Target": "LooseSprites/AquariumFish",
+            "FromFile": "assets/AquariumSprites.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 336,
+                "Width": 72,
+                "Height": 48
+            }
+        },
+        /*
+        {
+            "Action": "EditData",
+            "Target": "Data/FishPondData",
+            "Entries": {
+                "fish_sockeye_salmon": {
+                    "RequiredTags": [
+                        "fish_sockeye_salmon"
+                    ],
+                    "SpawnTime": -1,
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 9,
+                            "Chance": 0.01,
+                            "ItemID": 72,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 6,
+                            "Chance": 0.02,
+                            "ItemID": 80,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 2
+                        },
+                        {
+                            "RequiredPopulation": 0,
+                            "Chance": 0.7,
+                            "ItemID": 812,
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        }
+                    ],
+                    "PopulationGates": {
+                        "2": [
+                            "393 3", //what on earth are they going to ask for??
+                            "397 2",
+                            "84 2"
+                        ],
+                        "4": [
+                            "536",
+                            "392 2",
+                            "283 3"
+                        ],
+                        "6": [
+                            "394",
+                            "414 3",
+                            "80 5"
+                        ],
+                        "8": [
+                            "542",
+                            "397"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/FishPondData",
+            "MoveEntries": [
+                {
+                    "ID": "fish_pearl_fish",
+                    "ToPosition": "Top"
+                }
+            ]
+        }*/
+    ]
+}

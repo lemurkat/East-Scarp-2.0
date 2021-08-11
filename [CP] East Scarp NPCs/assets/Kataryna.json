@@ -1,0 +1,16 @@
+{
+    "Changes": [
+        { //Kataryna
+            "LogName": "Kataryna",
+            "Action": "Load",
+            "Target": "Characters/Kataryna, Portraits/Kataryna",
+            "FromFile": "assets/{{Target}}/Kataryna.png"
+        },
+        { //Kataryna
+            "LogName": "Kataryna",
+            "Action": "Load",
+            "Target":  "Characters/Dialogue/Kataryna",
+            "FromFile": "assets/{{Target}}/Kataryna.json"
+        }
+    ]
+}

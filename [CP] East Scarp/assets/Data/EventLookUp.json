@@ -1,0 +1,42 @@
+{
+    
+    "Changes": [
+        {
+            //Add events to the blocklist so they won't show up
+            //in the "Available Events" menu
+            //left-hand side is the event id, right side doesnt matter
+            "Action": "EditData",
+            "Target": "Mods/shekurika.EventLookup/blocklist",
+            "Entries": {
+                "57870008": "T",
+                "57870015": "T"
+            }
+        },
+        {
+            //Add "displayname" to locations
+            "Action": "EditData",
+            "Target": "Mods/shekurika.EventLookup/locationnames",
+            "Entries": {
+                "Custom_EastScarpe": "East Scarp",
+                "Custom_ESLighthouse": "Lighthouse",
+                "Custom_ESHouse1": "Aideen's House",
+                "Custom_ESHouse2": "",
+                "Custom_ESHouse3": "",
+                "Custom_ESHouse4": "",
+                "Custom_ESFishingCabin": "",
+                "Custom_ESBirdHide": "ELoise's Birdhide",
+                "Custom_ESVetHouse": "Vet House",
+                "Custom_ESJacobOffice": "Jacob's Office",
+                "Custom_ESJacobBarn": "Jacob's Barn",
+                "Custom_ESSilo": "Silo",
+                "Custom_ESDeepMountains": "Deep Mountains",
+                "Custom_ESOrchard": "Cherry Orchard",
+                "Custom_ESDeepDark": "East Scarp's Deep Dark",
+                "Custom_ESOrchardHouse": "Abandoned House",
+                "Custom_ESShack": "Smuggler's Shack",
+                "Custom_ESSeaCave": "East Scarp's Sea Cave",
+                "Custom_EastScarpeInn": "Scarpe Inn",
+            }
+        }
+    ]
+}

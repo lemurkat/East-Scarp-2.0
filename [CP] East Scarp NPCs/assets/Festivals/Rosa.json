@@ -1,0 +1,27 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Rosa 33 25 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Ice Festival Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/winter8",
+            "Entries": {
+                "Rosa": "Brrr! We're thinking of sneaking into one of those ice huts. It's got to be warmer in there, right?$1"
+            }
+        },
+]
+}

@@ -1,0 +1,85 @@
+{
+  "Changes": [
+    {
+      "LogName": "Load Rosa Dialogue File",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/Rosa, Characters/Schedules/Rosa",
+      "FromFile": "assets/{{target}}/Rosa.json"
+    },
+    {
+      "LogName": "NPC Dispositions",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Entries": {
+        "Rosa": "adult/neutral/neutral/neutral/female/not-datable/null/Town/null/fall 7/Custom_ES_InnRoomRosa 5 5/Rosa"
+      }
+    },
+    {
+      "LogName": "NPC Manifestation - makes Rosa datable if you're playing a female char (she may ask you at 8-hearts if you are interested in women romantically and if no, remove - or add - a flag)",
+      "Action": "EditData",
+      "Target": "Data/NPCDispositions",
+      "Fields": {
+        "Rosa": {
+          "5": "datable"
+        }
+      },
+      "When": {
+        "PlayerGender": "female"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/NPCGiftTastes",
+      "Entries": {
+        "Rosa": "I love it, thank you!/540 233 400/This is great!/-4 -5 -6 -7 -79 422 216 246 768/Thanks.../330/Uh.../2 769/That was very thoughtful of you./-4/ "
+      }
+    },
+    {
+      "LogName": "Portraits",
+      "Action": "Load",
+      "Target": "Portraits/Rosa",
+      "FromFile": "assets/{{Target}}/Rosa.png"
+    },
+    {
+      "Action": "Include",
+      "FromFile": "assets/Festivals/Rosa.json"
+    },
+    {
+      "LogName": "Schedule Dialogue",
+      "Action": "Load",
+      "Target": "Strings/schedules/Rosa",
+      "FromFile": "assets/Characters/schedules/Rosa/ScheduleDialogueRosa.json"
+    },
+    /*********
+  ** Sprites
+  *********/
+    {
+      "LogName": "Sprites",
+      "Action": "Load",
+      "Target": "Characters/Rosa",
+      "FromFile": "assets/{{Target}}/Rosa.png"
+    },
+    {
+      "LogName": "Sprites",
+      "Action": "EditData",
+      "Target": "Characters/schedules/Rosa",
+      "Entries": {
+        "spring": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpe 22 100 2/1800 Custom_EastScarpe 17 121 2/2000 Custom_ES_InnRoomRosa 5 5 1",
+        "summer": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpe 22 100 2/1800 Custom_EastScarpe 17 121 2/2000 Custom_ES_InnRoomRosa 5 5 1",
+        "fall": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpe 22 100 2/1800 Custom_EastScarpe 17 121 2/2000 Custom_ES_InnRoomRosa 5 5 1",
+        "winter": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpe 22 100 2/1800 Custom_EastScarpe 17 121 2/2000 Custom_ES_InnRoomRosa 5 5 1",
+        "rain": "750 Custom_EastScarpeInn 43 10 0 square_5_1_0/0930 Custom_EastScarpeInn 33 28 0/1500 Custom_EastScarpeInn 25 12 2 square_3_1_2/1800 Custom_EastScarpe 17 121 2/2000 Custom_ES_InnRoomRosa 5 5 1",
+      },
+      "When": {
+        "HasMod": "ItsBenter.InnCompanions.CP"
+      },
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Events/Custom_EastScarpeInn",
+      "Entries": {
+        "57874000": "jaunty/37 15/farmer 40 22 0 Rosa 44 10 0/skippable/addObject 43 17 234 1/addObject 41 8 245 1/addObject 42 8 246 1/move farmer 0 -4 1 true/move Rosa -4 0 2 true/emote Rosa 56/emote farmer 8/move farmer 2 0 1/move Rosa 0 5 2/doAction 40 16/playSound openBox/faceDirection farmer 3/move farmer -2 0 0 true/move Rosa 0 2 2 true/pause 1000/emote Rosa 16/jump Rosa 3/jump farmer 3/move farmer 1 0 3/playSound dwop/addObject 40 18 255 0/textAboveHead Rosa \"Oh!\"/speak Rosa \"You scared me! Now look what I've done!$3\"/quickQuestion #I'm sorry!#What? It's not my fault!(break)speak Rosa \"Me too. I didn't realize anyone else was here. Thanks for being nice about it.\"(break)speak Rosa \"How was I supposed to know someone else was here?#$b#Oh, never mind.$1\"/speak Rosa \"Look at this mess!$2#$b#I hope you didn't get sprayed by any melon juice.$2\"/emote farmer 36/speak Rosa \"Well, that's a relief. The name's Rosa, by the way.\"/playSound pickUpItem/removeSprite 40 18/move Rosa 0 1 1/speak Rosa \"I'm from Fort Josa. I'm working here temporarily.\"/faceDirection Rosa 3/pause 500/faceDirection Rosa 1/speak Rosa \"The owners of the inn are away for a while, so I'm keeping an eye on it.#$b#Maybe if I'm lucky we'll even get some guests!$1\"/emote farmer 32/pause 500/speak Rosa \"As you can probably smell, I enjoy baking. And this place has a great kitchen!$1#$b#So, if you ever find yourself in need of baked goods or coffee, I'll be selling them at the counter. Feel free to stop by!\"/emote farmer 56/pause 500/speak Rosa \"Anyway, I'd better get this messed up melon in the bin.#$b#Don't be a stranger... Er, what did you say your name was again?\"/pause 500/emote farmer 40/pause 500/speak Rosa \"Okay, don't be a stranger, @.\"/pause 500/move Rosa 0 -1 0/move farmer -1 0 0/move Rosa 0 -6 0 true/pause 1000/end"
+      }
+    }
+  ]
+}
