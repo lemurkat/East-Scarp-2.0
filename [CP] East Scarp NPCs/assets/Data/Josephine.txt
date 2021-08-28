@@ -1,0 +1,63 @@
+******************************
+S P O I L E R S   F O L L O W
+******************************
+
+Lewis gives Josephine a tour of the town and she has a series of events that all trigger on various days/heart levels (so as not to overload the player).
+
+Lewis and her admire the museum, she compliments the architecture.
+He invites her inside and introduces her to Gunther, how is his charming self and makes her giggle and blush a little.
+Gunther escorts her on a tour of the place, and her response varies depending on how many items have been donated:
+< 40 - she comments on how bare it is, to which Lewis tells her of the scoundrel that stole all the artifacts.
+40+ - she comments on how it's rather impressive, but makes some sort of throwaway comment about Zuzu's Museum.
+Complete: she admires it, then suggests that she could donate paintings for the walls.
+"Oh, this place certainly has appeal, but the walls are so bare! Oh, I know! I'll speak to my good friend (artist name) to donate a few pieces."
+
+Lewis and Josephine are standing outside the library.
+Lewis: "... designed 50 years ago by renowned architect ..."
+"Oh, what a lovely little building. Such a traditional design! You rarely see libraries like this in the city anymore. They've all become communications hubs; busy and soulless.
+"Would you like to see inside?"
+"Oh yes!"
+Lewis stands aside so she can enter. TextAboveHead "Ladies first"
+Warp inside. Gunther is cleaning (animation) he starts as they enter. Farmer is browsing the books, or perhaps talking to someone.
+Gunther: "Good day. It's a pleasure to make your acquantince, First Lady Josephine. The name's Gunther, curator of our humble library and museum"
+Josephine: The pleasure is all mine. And such a quaint building. Mayor Lewis has indicated you had some real gems amongst your collection."
+Gunther: "Indeed, quite literally, milady. Unfortunately my predecessor left rather suddenly, taking them all with him."
+Josephine: "How terrible! I hope you had insurance."
+Gunther: "We did not, I'm afraid. But our new farmer Mr. @ has been helping restore our collection.^We did not, I'm afraid. But our new farmer Miss @ has been helping restore our collection.
+He leads Josephine along and through the rows, pausing every now and then. switchEvent according to the follow conditions
+
+"HasMailFlag |contains=museum40":false
+JosephineK: "It's rather bare, isn't it. Still, I expect there's not much history left around here to be discovered.
+Gunther is mildly offended. "That's not true, milady. Pelican Town has a rich and fascinating history, from dinosaurs to ancient technology."
+Josephine turns around looks at things. "Is that a spoon?"
+TextAboveHead Gunther \"Er...\"/ 
+
+"HasMailFlag":"museum40"
+"HasMailFlag |contains=museum90":false
+JosephineK: "Your collection is fascinating! Most admirable, given the size of your dear wee village. It reminds me of the Curator's Chamber in Zuzu's National Museum. It's home to all manner of quirky trinkets."
+
+"HasMailFlag":"museum90"
+JosephineK: "I'm impressed! I never would have expected such a magnificant collection in such a dear wee village. There's just something missing...
+ponders
+That's what it is! Your walls are rather bare. Hmm, perhaps I could have a word with my good friend, Lupini, and see if he might donate a few pieces. What do you think?
+
+
+
+
+Leah is showing Josephine her latest work, and gives a fairly indepth explanation on what it means to her. (maybe the work could be a temp actor, and it could be outside her house).
+Josephine makes some fairly banal compliments, then comments that  she would love to purchase it, as it would add a delightfully rustic touch to her conservatory.
+Leah is not impressed.
+
+
+
+Oliver:
+FArmer walks in on Oliver telling his friend about Lexi.
+She doesn't believe him, believes the photos are fake.
+Oliver gets grumpy when challenged by farmer.
+Friend jokingly shows photographs to her aunt who is reporter for 'Cryptozoology Today'.
+Her aunt Kataryna has seen the photo and wishes to investigate.
+
+
+Farmer walks in on Oliver on a video call with someone called Kataryna. It soon becomes evident that she's a reporter for a tabloid called 'Cryptozoology Today'.
+
+

@@ -1,7 +1,7 @@
 ﻿{
 	"Name": "East Scarpe (SMAPI)",
 	"Author": "LemurKat and kdau",
-	"Version": "2.0.1",
+	"Version": "2.0.0-beta.01",
 	"Description": "Custom logic for LemurKat's East Scarpe mod",
 	"UniqueID": "LemurKat.EastScarpe.SMAPI",
 	"EntryDll": "EastScarpe.dll",

@@ -23,7 +23,7 @@
             "Action": "EditData",
             "Target": "data/festivals/winter8",
             "Entries": {
-                "OliverK": "Hi @! Yeah you guessed it, I'm hiding from my Mom.$2#$b#'Sides, this island's pretty cool. I wonder how deep the water is...$5"
+                "OliverK": "{{i18n:festivals.oliver.winter8}}"
             },
             "When": {
                 "HasSeenEvent |contains=57873005": false
@@ -34,8 +34,8 @@
             "Action": "EditData",
             "Target": "data/festivals/winter8",
             "Entries": {
-                "OliverK": "Hi @! Yeah, Ellie wanted to tag along with me.#$b#I don't mind, she's cool. And it's kinda like having a kid sister.$1",
-                "Eloise": "Hey Olly! I think I saw a lingcod. I hope it doesn't gobble up all the other fish!$3"
+                "OliverK": "{{i18n:festivals.oliver.winter8.3005}}",
+                "Eloise": "{{i18n:festivals.eloise.winter8.3005}}"
             },
             "When": {
                 "HasSeenEvent |contains=57873005": true
@@ -61,7 +61,7 @@
             "Action": "EditData",
             "Target": "data/festivals/winter25",
             "Entries": {
-                "OliverK": "Hey @. Yeah, Dad couldn't make it... he's helping out with some charity in Zuzu.$2#$b#Still, the food's good, and Dr. Jacob said I could join him, so it's cool. Literally.$1"
+                "OliverK": "{{i18n:festivals.oliver.winter25}}"
             }
         },
         {
@@ -84,7 +84,7 @@
             "Action": "EditData",
             "Target": "data/festivals/spring13",
             "Entries": {
-                "OliverK": "Hey there! I'm totally just here for the food. And this eggnog! It's wicked-good. You should try some.#$b#What do you mean I shouldn't be drinking it? Why? What's wrong with it?$4#$b#Oh... Please don't tell Mom, okay?$2"
+                "OliverK": "{{i18n:festivals.oliver.spring13}}"
             }
         },
         {
@@ -107,8 +107,71 @@
             "Action": "EditData",
             "Target": "data/festivals/spring24",
             "Entries": {
-                "OliverK": "Nah, I'm not hiding! I'm the welcoming committee!#$b#Yeh, I volunteered for the job, if only to get out of the dancing!$1"
+                "OliverK": "{{i18n:festivals.oliver.spring24}}"
             }
         },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 90 40 1",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Jellies Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/summer28",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.summer28}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Leximonster 102 40 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        5
+                    ],
+                    "Value": "swimming Leximonster",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasSeenEvent": "57872012"
+            }
+        },
+        {
+            "LogName": "Jellies Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/summer28",
+            "When": {
+                "HasSeenEvent": "57872012"
+            },
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.summer28.2012}}",
+                "Leximonster":"{{i18n:festivals.lexi.summer28}}"
+            }
+        }
     ]
 }

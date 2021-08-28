@@ -430,9 +430,86 @@ pause 1000/
 end
 
 
+Oliver drops by to invite you over to the Mayor's house for dinner. His Dad's in town and Mayor Lewis wanted to invite you for some reason.
+He says you're to bring wine and come after 6pm.
+
+triggered by wine in the inventory
+
+Lewis meets you at the door, he's visible flustered because he wants to impress the Governor. He's had Gus prepare a meal and he's relieevd to see you. You arrive first, but the Governor and his family arrive shortly afterwards altogether.
+(should he put the wine on ice, do you fridge wine? Must research).
+Set up dinner table elaborately. MAybe Gus could be leaving as you arrive. Lewis is flustering around like a boy trying to impress his first date.
+"Hello ... Lewis, isn't it! Pleasure to see you again, old boy. How's everything going? Josie's given me the tour of the town. It's look very nice.
+And you must be ... err, what was your name again? @? Excellent! Pleased to meet you. Josie has told me all about you. 
+Meanwhile, Oliver is looking a bit sulky. His Dad's not paying much attention to him.
+Dinner starts maybe have some conversation.
+
+Possibly around the focus of Mayoral elections.
+"Oh, it's been a while since there was a Mayoral election. Heh, maybe you'll have some competition next time. What do you think, err, @, isn't it?"
+"I'd give Lewis a run for his money."
+"I guess we'll just have to wait and see." 
+"I can't imagine anyone but Lewis as Mayor."
+
+End with:
+Well, it's been delightful getting to know you a bit better. It's a shame Josie and Ollie will be leaving soon. But it's time the boy returned to school, and I do rather miss my wife! Speaking of, Lewis old chap, still enjoying the bachelor life?
+I have to say, living alone may have its perks, but the older I get, the longer and lonelier the evenings become. There's no special someone in your life?
+Lewis looks stressed. /emote Lewis 28/
+well, anyway, Josie's got her big reunion concert soon, and I'm sure Oliver'll be delighted to see his old school friends again, won't you lad?  
+Oliver looks uncomfortable. "Well Dad... there's something I've been wanting to talk a-"
+Governor faces Lewis. "Well, best be off, don't want to outstay our welcome, heh?
+speak JosephineK \"Yes, thank you for a delightful dinner, Mayor Lewis. There's nothing quite like good, simple country fare, is there?"
+emote OliverK stormcloud
+"And pleased to meet you, @. Remember what I said! Mayoral elections!#$b#I'll see you again at the next luau. You can give me your verdict then. Come Josie."
+Josie and Governor walk towads the door.
+textAboveHead GovernorK \"Come lad!\"/
+Oliver follows, pauses to stop and look at farmer. 
+emote farmer ?
+emote OliverK ...
+faceDirection OliverK 2/
+Oliver follwos them out.
+
+speak Lewis \"That went well, don't you think?\"/
+emote farmer 60
+pause 1000 end
+
+*******************************
+
+speak OliverK \"I told you, Mom, I'm not leaving!$1#$b#I... I want to stay.$2\"/
+speak JosephineK \"Oh Oliver... as lovely and hospitable as this town has been to us. It's trapped in the past.#$b#You... you're got such a bright future ahead of you. Why throw it all away?#$b#
+Is it a girl? I thought you were getting on so well with Miss Kennedy.#$b#Oh... is it a boy? You can tell us, Oliver. It's okay. We might be old, but we'd understand.$1\"/
+textAboveHead OliverK \"Mom!\"/pause 500/speak OliverK \"It's not a boy. OR a girl. This isn't just some 'teen rebellion'.#$b#I love it here! I really like working with Dr. Jacob and helping him with the animals makes me happy.
+#$b#Yes, I know you want me to be a lawyer, or a dentist or something 'respectable'. But, I'm not sure I'm cut out for that. Not yet. Maybe never.\"/
+speak JosephineK \"If you do stay, where are you going to live? You can't exactly sleep in the inn forever! As much as you'd like to think you are, you're not an adult yet!\"/
+speak OliverK \"Dr. Jacob has a spare room. And this country air... it really has helped, you know.#$b#I've never felt so healthy in all my life. Please let me stay, Mom? Even if it's only for another year.\"/
+emote JosephineK 40/pause 1000/emote OliverK 28/pause 1000/
+enter farmer
+speak OliverK \"@! Hi. Hey, I'm telling Mom that I want to stay here. Pelican Town really feels like home to me.#$b#You love it here too, right? Help me persuade her, please?\"/
+quickQuestion #I'd rather not get involved.
+              #Pelican Town has really helped him. I'd like to see him stay.
+              #Oliver should stay - it's a great opportunity for a career in veterinary medicine.
+	      #Oliver should go. This place will just hold him back.
+(break)emote OliverK 12\\pause 500\\speak JosephineK \"This is a family matter anyway, I'm pleased @ gets that.#$b#It's true that Pelican Town has had a positive influence on you.#$b#But your schooling... university... I just don't know.$2\"
+(break)emote OliverK 32\\friendship OliverK 50\\pause 500\\speak OliverK \"Thanks, @. It's cool of you to say that.\"\\faceDirection OliverK 3\\speak OliverK \"I've got friends here, Mom, people'll that'll look out for me.\"
+(break)	
+(break)emote OliverK 12\\friendship OliverK -50\\pause 500\\speak OliverK \"Thanks @.$a#$b#And here I thought you were my friend.$2\"/ 
+pause 1000/speak JosephineK \"Very well, Oliver. You've put forth your case.#$b#I'll need to talk this over with your father. And Dr. Jacob.$2\"/
+
+ /*
 
 
 
+
+       
+changeToTemporaryMap OliverVideoGame/viewport -100 -100/warp OliverK -100 -100/warp farmer -100 -100/viewport 20 5/pause 500/message \"Answer me this riddle, hapless mortal\"/pause 400/message \"I follow you through the day and mimic your every move, but you can neither touch me, nor catch me.\"/speak OliverK \"$q 5787331 null# What am I?#$r 5787332 0 Oliver_Right1#My shadow#$r 5787333 0 Oliver_Wrong#My reflection\"/fork 5787332 OliverRid1/switchEvent SphinxDie",
+        {
+            "Action": "EditData",\
+            "Target": "Data/Events/Temp",
+            "Entries": {
+                "OliverRid1":"pause 500/message \"You are correct. But this next one shall truly stump you.\"/pause 500/message \"What is so fragile that saying its name breaks it.\"/speak OliverK \"$q 5787334 null#...#$r 5787333 0 Oliver_Wrong#A promise#$r 5787335 0 Oliver_Right2#Silence\"/fork 5787335 OliverRid2/switchEvent SphinxDie",
+                "OliverRid2":"pause 500/message \"What! You are not as stupid as you look, human. But still! There is yet one more, and when you answer false, I shall devor you!\"/pause 500/message \"I am always hungry and will die if not fed, but whatever I touch shall soon turn red.\"/pause 500/speak OliverK \"$r 5787336 null#What am I?#$r 5787337 0 Oliver_Right3#Fire.#$r 5787333 0 Oliver_Wrong#A dragon\"/fork OliverRid3/switchEvent SphinxDie",
+                "OliverRid3":"pause 500/message \"How? How could you have answered all of my riddles correctly? This... this is unprecedented.\"/pause 500/friendship OliverK 50/message \"The sphinx steps aside, permitting passage through her domain.\"/pause 500/viewport -100 -100/changeLocation EastScarpeInn/viewport -100 -100/warp OliverK 14 12 true/warp farmer 15 12 true/faceDirection OliverK 1/faceDirection farmer 3/textAboveHead OliverK \"We did it!\"/speak OliverK \"Well, you did itI suppose.$1#$b#Thanks @. You're pretty awesome. Let me know if you want to join our clan!\"/emote farmer 32/speak OliverK \"There's three of us that play. Saturday night's mostly. Mom gets grumpy if I play on weeknights.$2\"/emote farmer 32/pause 1000/end",
+                "SphinxDie":"pause 500/message \"Your answer is incorrect, ignorant human. Prepare to die!\"/ambientLight 1 255 1/playSound death/fade/viewport -100 -100/changeLocation EastScarpeInn/viewport -100 -100/warp OliverK 14 12 true/warp farmer 15 12 true/faceDirection OliverK 1/faceDirection farmer 3/viewport 15 13/pause 500/speak OliverK \"Well, thanks for trying, @. Maybe next time.$2\"/emote farmer 60/pause 1000/end",
+            }
+        }*/
 
 **************
 Eyvinder

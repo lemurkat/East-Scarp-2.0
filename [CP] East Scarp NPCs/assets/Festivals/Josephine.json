@@ -20,7 +20,7 @@
                 "Action": "EditData",
                 "Target": "data/festivals/winter8",
                 "Entries": {
-                    "JosephineK": "Oh, I hope Olly's still wrapped up warm... I'd hate for him to catch a chill!$2"
+                    "JosephineK": "{{i18n:festivals.josephine.winter8}}"
                 }
             },
 {
@@ -43,7 +43,7 @@
                 "Action": "EditData",
                 "Target": "data/festivals/winter25",
                 "Entries": {
-                    "JosephineK": "Merry Winter Star, @! I'm keeping Mayor Lewis company today.#$b#*whispers* He believes I'm here representing my husband, but really it's for the company.$1"
+                    "JosephineK": "{{i18n:festivals.josephine.winter25}}"
                 }
             },
             {
@@ -66,7 +66,7 @@
                 "Action": "EditData",
                 "Target": "data/festivals/spring13",
                 "Entries": {
-                    "JosephineK": "What a whimsical celebration! I'll have to take a photo in that rabbit; Guvvie will be most amused.#$b#It's a pity he couldn't join us... but he's a very busy man.$2"
+                    "JosephineK": "{{i18n:festivals.josephine.spring13}}"
                 }
             },
             {
@@ -89,8 +89,31 @@
                 "Action": "EditData",
                 "Target": "data/festivals/spring24",
                 "Entries": {
-                    "JosephineK": "It's lovely to watch the young folk dance, isn't it? Heh, I remember a time when I could turn a few heads on the dance floor.$1"
+                    "JosephineK": "{{i18n:festivals.josephine.spring24}}"
                 }
             },
+ {
+                "Action": "EditData",
+                "Target": "Data/Festivals/summer28",
+                "TextOperations": [
+                    {
+                        "Operation": "Append",
+                        "Target": [
+                            "Entries",
+                            "Set-Up_additionalCharacters"
+                        ],
+                        "Value": "JosephineK 97 39 2",
+                        "Delimiter": "/"
+                    }
+                ]
+            },
+            {
+                "LogName": "Jellies Festival Dialogue",
+                "Action": "EditData",
+                "Target": "data/festivals/summer28",
+                "Entries": {
+                    "JosephineK": "{{i18n:festivals.josephine.summer28}}"
+                }
+            }
         ]
     }

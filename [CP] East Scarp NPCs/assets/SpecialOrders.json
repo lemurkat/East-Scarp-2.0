@@ -220,7 +220,7 @@
                         {
                             "Type": "Collect",
                             "Text": "[EastScarp.SpecialOrders.LadySheba2_Objective_1_Text]",
-                            "RequiredCount": "50",
+                            "RequiredCount": "5",
                             "Data": {
                                 "AcceptedContextTags": "item_bug_steak"
                             }
@@ -489,7 +489,7 @@
                             "Text": "[EastScarp.SpecialOrders.BeatriceQuartz_Objective_0_Text]",
                             "RequiredCount": "12",
                             "Data": {
-                                "AcceptedContextTags": "item_quartz item_fire_quartz"
+                                "AcceptedContextTags": "item_quartz, item_fire_quartz"
                             }
                         },
                         {
@@ -502,7 +502,7 @@
                         },
                         {
                             "Type": "Donate",
-                            "Text": "[EastScarp.SpecialOrders.BeatriceQuartze_2_Text]",
+                            "Text": "[EastScarp.SpecialOrders.BeatriceQuartz_2_Text]",
                             "RequiredCount": "12",
                             "Data": {
                                 "DropBox": "ESLightHouseBox",
@@ -543,7 +543,7 @@
                 "EastScarp.SpecialOrders.LadySheba2_Name": "More food for the cat",
                 "EastScarp.SpecialOrders.LadySheba2_Text": "The stray cat's still hungry! Maybe some bug steak would help us make friends with her? < Jas",
                 "EastScarp.SpecialOrders.LadySheba2_Objective_0_Text": "Collect 50 wads of bug meat.",
-                "EastScarp.SpecialOrders.LadySheba2_Objective_1_Text": "Craft 5 Bug Meat Steaks in the crate by Scarp Beach",
+                "EastScarp.SpecialOrders.LadySheba2_Objective_1_Text": "Craft 5 Bug Meat Steaks",
                 "EastScarp.SpecialOrders.LadySheba2_Objective_2_Text": "Place 5 Bug Meat Steaks in the crate by Scarp Beach",
                 //Cheese for the Cat (part 2)
                 "EastScarp.SpecialOrders.LadySheba3_Name": "Cheese for the cat",
@@ -581,7 +581,7 @@
                 "EastScarp.SpecialOrders.BeatriceQuartz_Text": "Recent storms have damaged the lighthouse lens, and we need freshly smelted refined quartz for the repairs. If anybody could drop some by, please?     - Beatrice",
                 "EastScarp.SpecialOrders.BeatriceQuartz_Objective_0_Text": "Collect 12 quartz",
                 "EastScarp.SpecialOrders.BeatriceQuartz_Objective_1_Text": "Process 12 bars of refined quartz",
-                "EastScarp.SpecialOrders.BeatriceQuartz_Objective_2_Text": "Deliver 12 refined quartz to the Lighthouse",
+                "EastScarp.SpecialOrders.BeatriceQuartz_Objective_2_Text": "Deliver 12 refined quartz to the Lighthouse"
             }
         },
         {
@@ -603,7 +603,7 @@
             "Action": "EditData",
             "Target": "Data/Mail",
             "Entries": {
-                "EastScarp.SpecialOrders.AideenFlowersMail": "Dear @, ^I am most grateful for the daffodils. In return, I insist that you call by my house. I have acquired some new seeds, and I would appreciate your assistance growing them.^ Regards, Aideen.[#]Flower Delivery Thank You",
+                "EastScarp.SpecialOrders.AideenFlowersMail": "Dear @, ^I am most grateful for the daffodils. In return, I insist that you call by my house. I have acquired some new seeds, and I would appreciate your assistance growing them.^ Regards, Aideen.[#]Flower Delivery Thank You"
             },
             "When": {
                 "HasMod": "LemurKat.EastScarpe.JA",
@@ -627,12 +627,25 @@
             "Action": "EditData",
             "Target": "Data/Events/Custom_ESHouse1",
             "Entries": {
-                "57879901/n EastScarp.SpecialOrders.AideenFlowersMail/p Aideen": "playful/9 11/Aideen 5 9 3 farmer 5 15 0/skippable/addBigProp 3 7 112/addBigProp 5 7 112/addBigProp 6 8 112/addBigProp 4 9 112/addBigProp 3 10 112/addBigProp 4 11 112/addBigProp 6 12 112/addTemporaryActor Munchboi 32 32 4 6 2 false/doAction 5 17/playSound doorOpen/pause 1000/move farmer 0 -4 0/faceDirection Aideen 2/animate Munchboi false false 120 16 17 18 18/pause 480/animate Munchboi false true 120 18/speak Aideen \"@! What fortuitous timing! I have just finished arranging all of your lovely blooms.\"/faceDirection farmer 3/jump farmer 1/emote farmer 16/pause 1000/faceDirection farmer 0/speak Aideen \"The courier shall be picking them up this afternoon, and they shall adorn Zuzu's annual flower festival!$1#$b#Is that not most terribly exciting?$7\"/pause 1000/emote farmer 56/pause 1000/jump Aideen 3/speak Aideen \"Oh yes! That's right. I requested you stop by because I have a little something for you. Please, wait a moment.\"/pause 500/move Aideen 1 0 1/playSound openChest/textAboveHead Aideen \"Here they are.\"/pause 1000/move Aideen 0 2 3/faceDirection farmer 1/pause 500/speak Aideen \"These were a gift from a botanist. He assured me they would produce a fine bloom.#$b#I ... well I thought that you might have more success with them than I.$4 [{{spacechase0.jsonAssets/ObjectId:Bird Of Paradise Seeds}}][0{{spacechase0.jsonAssets/ObjectId:Bird Of Paradise Seeds}}][00{{spacechase0.jsonAssets/ObjectId:Bird Of Paradise Seeds}}]\"/speak Aideen \"Perhaps you would consider sharing the flowers with me?\"/pause 500/emote farmer 32/pause 1000/end"
-            },
+                "57879901/n EastScarp.SpecialOrders.AideenFlowersMail/p Aideen": "playful/9 11/Aideen 5 9 3 farmer 5 15 0/skippable/addBigProp 3 7 112/addBigProp 5 7 112/addBigProp 6 8 112/addBigProp 4 9 112/addBigProp 3 10 112/addBigProp 4 11 112/addBigProp 6 12 112/addTemporaryActor Munchboi 32 32 4 6 2 false/doAction 5 17/playSound doorOpen/pause 1000/move farmer 0 -4 0/faceDirection Aideen 2/animate Munchboi false false 120 16 17 18 18/pause 480/animate Munchboi false true 120 18/speak Aideen \"{{i18n:57879901.01}}\"/faceDirection farmer 3/jump farmer 1/emote farmer 16/pause 1000/faceDirection farmer 0/speak Aideen \"{{i18n:57879901.02}}\"/pause 1000/emote farmer 56/pause 1000/jump Aideen 3/speak Aideen \"{{i18n:57879901.03}}\"/pause 500/move Aideen 1 0 1/playSound openChest/textAboveHead Aideen \"{{i18n:57879901.04}}\"/pause 1000/move Aideen 0 2 3/faceDirection farmer 1/pause 500/speak Aideen \"These were a gift from a botanist. He assured me they would produce a fine bloom.#$b#I ... well I thought that you might have more success with them than I.$4 [{{spacechase0.jsonAssets/ObjectId:Bird Of Paradise Seeds}}][0{{spacechase0.jsonAssets/ObjectId:Bird Of Paradise Seeds}}][00{{spacechase0.jsonAssets/ObjectId:Bird Of Paradise Seeds}}]\"/speak Aideen \"{{i18n:57879901.05}}\"/pause 500/emote farmer 32/pause 1000/end" },
             "When": {
                 "HasMod": "LemurKat.EastScarpe.JA",
                 "HasMod |contains=spacechase0.jsonAssets": true
             }
         },
+        {
+            "Action":"Load",
+            "Target":"Animals/FairyPenguin",
+            "FromFile":"assets/Images/FairyPenguin.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_EastScarpe",
+            "Entries": {
+                "57879902/n EastScarp.SpecialOrders.SlayCrabsMail/t 800 1300/d Tue Wed Fri": "ocean/22 114/Eloise 18 112 2 Jacob 22 102 0 Rosa 22 100 2 farmer 17 102 2/skippable/addTemporaryActor FairyPenguin 16 16 -100 -100 2 false Animal Penguin1/addTemporaryActor FairyPenguin 16 16 -100 -100 2 false Animal Penguin2/showFrame Penguin1 21/showFrame Penguin2 21/move farmer 0 10 2/emote Eloise 16/jump Eloise 3/faceDirection farmer 1/emote farmer 8/pause 500/textAboveHead Eloise \"{{i18n:57879902.01}}\"/faceDirection Eloise 2/faceDirection farmer 2/viewport move 0 4 1000/pause 1000/warp Penguin1 23 124/pause 2000/animate Penguin1 false false 1000 21 22 23 23/move Penguin1 0 -6 0 true/pause 2000/speak Eloise \"{{i18n:57879902.02}}\"/move Penguin1 -5 0 2/warp Penguin2 23 124/pause 2000/animate Penguin2 false false 1000 21 22 23 23/move Penguin2 0 -6 3 true/faceDirection Eloise 3/faceDirection farmer 1/speak Eloise \"{{i18n:57879902.03}}\"/pause 500/move Penguin2 -2 0 3 true/move Penguin1 2 0 1 true/faceDirection Eloise 2/emote Eloise 20/pause 500/faceDirection farmer 2/pause 1000/emote Penguin2 56/emote Penguin1 20/pause 3000/end"
+                
+            }
+        }
+
     ]
 }

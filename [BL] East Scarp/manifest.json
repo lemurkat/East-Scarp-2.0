@@ -3,7 +3,7 @@
    "Author": "LemurKat",
    "Version": "2.0",
    "Description": "Catch a bus to East Scarp",
-   "UniqueID": "Lemurkat.EastScarpe.BL",
+   "UniqueID": "Lemurkat.EastScarpe.BL-beta.01",
    "MinimumApiVersion": "2.0",
    "UpdateKeys": [ "Nexus:???" ],
    "ContentPackFor": {

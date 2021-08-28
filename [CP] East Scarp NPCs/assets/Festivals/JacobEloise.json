@@ -482,8 +482,8 @@
 			"Action": "EditData",
 			"Target": "data/festivals/spring13",
 			"Entries": {
-				"Eloise": "Did you know a hen lays around 530 eggs in her lifetime!",
-				"Jacob": "Hello @. Eloise loves birds, but she's never been particularly interested in the egg hunt. Probably because Abigail always wins."
+				"Eloise": "{{i18n:festivals.eloise.spring13}}",
+				"Jacob": "{{i18n:festivals.jacob.spring13}}"
 			}
 		},
 		{
@@ -491,8 +491,8 @@
 			"Action": "EditData",
 			"Target": "data/festivals/summer11",
 			"Entries": {
-				"Eloise": "Dancing's so silly! I hope we haven't scared all the birds away.",
-				"Jacob": "Hello @. Just grabbing a little space to myself."
+				"Eloise": "{{i18n:festivals.eloise.summer11}}",
+				"Jacob": "{{i18n:festivals.jacob.summer11}}"
 			}
 		},
 		{
@@ -500,7 +500,7 @@
 			"Action": "EditData",
 			"Target": "data/festivals/summer11",
 			"Entries": {
-				"Jacob": "Hello @. Just hanging out here with my good buddy Coppernicus."
+				"Jacob": "{{i18n:festivals.jacob.summer11.MrG}}"
 			},
 			"When": {
 				"HasMod": "LemurKat.Mr.Ginger.NPC"
@@ -511,7 +511,7 @@
 			"Action": "EditData",
 			"Target": "data/festivals/summer11",
 			"Entries": {
-				"Jacob": "Hello @. Oh, we're just hanging out - two dads, boosting about our girls!$1"
+				"Jacob": "{{i18n:festivals.jacob.summer11.tris}}H"
 			},
 			"When": {
 				"HasMod": "LemurKat.Tristan.CP",
@@ -523,8 +523,8 @@
 			"Action": "EditData",
 			"Target": "data/festivals/summer28",
 			"Entries": {
-				"Eloise": "The jellyfish are so cool! Did you know that jellyfish don't have a brain? And they don't have a heart either!#$b#Also, they're not fish. They're actually Medusozoa.",
-				"Jacob": "Hello @! I hope Ellie hasn't chatted your ears off with jellyfish facts. There's a part of me that loves the mystery that surrounds them."
+				"Eloise": "{{i18n:festivals.eloise.summer28}}",
+				"Jacob": "{{i18n:festivals.jacob.summer28}}"
 			}
 		},
 		{
@@ -532,10 +532,10 @@
 			"Action": "EditData",
 			"Target": "data/festivals/summer28",
 			"Entries": {
-				"Eloise": "Miss Eloise's hat is so silly! Jellyfish don't have eyes!"
+				"Eloise": "{{i18n:festivals.eloise.summer28.juliet}}"
 			},
 			"When": {
-				"HasMod": "LemurKat.Eloise.NPC"
+				"HasMod": "LemurKat.JulietHouse.NPC"
 			}
 		},
 		{
@@ -543,8 +543,8 @@
 			"Action": "EditData",
 			"Target": "data/festivals/fall16",
 			"Entries": {
-				"Eloise": "Do you know why these chickens are so tame, farmer @?#$b#It's cos when birds hatch, they think the first thing they see is their mom. It's called 'imprinting'.$3#$b#So Marnie's their mother chicken!$1",
-				"Jacob": "These chickens look very healthy. Compliments to Ms. Marnie and Shane for raising them well.#$b#They're nicely socialized too."
+				"Eloise": "{{i18n:festivals.eloise.fall16}}",
+				"Jacob": "{{i18n:festivals.jacob.fall16}}"
 			},
 			"When": {
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
@@ -555,8 +555,8 @@
 			"Action": "EditData",
 			"Target": "data/festivals/fall16",
 			"Entries": {
-				"Eloise": "Wow, that pumpkin is so big! You could live in it!$3#$b#Did you know pumpkins are technically fruit, @? But you wouldn't put it in a fruit salad! Yuck!$1",
-				"Jacob": "Hello @. Good luck with your display today."
+				"Eloise": "{{i18n:festivals.eloise.fall16.sve}}",
+				"Jacob": "{{i18n:festivals.jacob.fall16.sve}}"
 			},
 			"When": {
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
@@ -567,9 +567,9 @@
 			"Action": "EditData",
 			"Target": "data/festivals/fall27",
 			"Entries": {
-				"Eloise": "Oh, why can't we go in the maze! We'll look after each other. Puh-lease Dad.$5",
-				"Jacob": "I know, I look ridiculous. Eloise is extremely persuasive.$5",
-				"Marnie": "Dr Jacob won't believe me when I tell him he's looking very smart in that outfit."
+				"Eloise": "{{i18n:festivals.eloise.fall27}}",
+				"Jacob": "{{i18n:festivals.jacob.fall27}}",
+				"Marnie": "{{i18n:festivals.marnie.fall27}}"
 			},
 			"When": {
 				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
@@ -580,8 +580,8 @@
 			"Action": "EditData",
 			"Target": "data/festivals/spring24",
 			"Entries": {
-				"Eloise": "Hi farmer @! You should ask my Dad to dance.#$b#He never dances with anyone but me. I think he misses Mom too much.$2",
-				"Jacob": "Ask someone to dance? Oh, I couldn't possibly!$4"
+				"Eloise": "{{i18n:festivals.eloise.spring24}}",
+				"Jacob": "{{i18n:festivals.jacob.spring24}}"
 			}
 		},
 		{
@@ -645,8 +645,8 @@
 			"Action": "EditData",
 			"Target": "data/festivals/winter8",
 			"Entries": {
-				"Eloise": "Are you gonna enter the competition, farmer @? I don't like fishing. Fish have feelings too you know!$2",
-				"Jacob": "Hello @. We're here for the company and the snowmen, not the competition.#$b#I'm sorry, but catch and release fishing feels somewhat barbaric to me."
+				"Eloise": "{{i18n:festivals.eloise.winter8}}",
+				"Jacob": "{{i18n:festivals.jacob.winter8}}"
 			}
 		},
 		{
@@ -654,8 +654,8 @@
 			"Action": "EditData",
 			"Target": "data/festivals/winter25",
 			"Entries": {
-				"Eloise": "Happy Winter Star! What do you think's in this one? It's REALLY big. And heavy!#$b#Hey, I found this and thought you might like it.[444 392 394]",
-				"Jacob": "Hello @. Happy Winter Star. Jodi has been gracious enough to invite me to join her family.#$b#Now if only I could drag Ellie away from the presents!"
+				"Eloise": "{{i18n:festivals.eloise.winter25}}",
+				"Jacob": "{{i18n:festivals.jacob.winter25}}"
 			}
 		}
 	]

@@ -4,5 +4,6 @@
   "Forest": "false",
   "Skin": "NewEastScarpe",
   "EnableMeadowFarm": "true",
-  "WalkTidePools": "true"
+  "WalkTidePools": "true",
+  "ObeliskOptions": "vanilla"
 }

@@ -127,17 +127,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Our natural history is sure to be interesting. I'm looking forward to this one.$1"
+                                    "Text": "{{i18n:movies.jacob.1}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
-                                    "Script": "/message \"(Jacob is smiling)\"",
-                                    "Text": "It's a wonderful world, isn't it?"
+                                    "Script": "/message \"{{i18n:movies.jacob.2}}\"",
+                                    "Text": "{{i18n:movies.jacob.3}}"
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "I'll have to take Ellie to see this sometime. She'd love it."
+                                    "Text": "{{i18n:movies.jacob.4}}"
                                 }
                             },
                             "ID": "reaction_1"
@@ -150,17 +150,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "I'm not a fan of this kind of movie."
+                                    "Text": "{{i18n:movies.jacob.5}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
-                                    "Script": "/message \"(Jacob looks bored)",
+                                    "Script": "/message \"{{i18n:movies.jacob.6}}\"",
                                     "Text": ""
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Cheap jump scares and shaky cameras... no, I wasn't scared at all."
+                                    "Text": "{{i18n:movies.jacob.7}}"
                                 }
                             },
                             "ID": "reaction_2"
@@ -173,7 +173,7 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "This looks ridiculous. Still, we could all do with a bit of fun, now and then, right?"
+                                    "Text": "{{i18n:movies.jacob.8}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
@@ -183,7 +183,7 @@
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Oh yes, I was amused. I wonder if Ellie would enjoy it?"
+                                    "Text": "{{i18n:movies.jacob.9}}"
                                 }
                             },
                             "ID": "reaction_3"
@@ -196,17 +196,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Oh, this looks emotional."
+                                    "Text": "{{i18n:movies.jacob.10}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
-                                    "Script": "/message \"Jacob wipes away a tear\"",
+                                    "Script": "/message \"{{i18n:movies.jacob.11}}\"",
                                     "Text": ""
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "It's movies like this that make me... well, Del would've hated it, and called me a sentimental sap.$2"
+                                    "Text": "{{i18n:movies.jacob.12}}"
                                 }
                             },
                             "ID": "reaction_4"
@@ -219,13 +219,13 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "It's nice to take a break from work now and then."
+                                    "Text": "{{i18n:movies.jacob.13}}"
                                 },
                                 "DuringMovie": null,
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Thank you for inviting me, @. I thoroughly enjoyed it."
+                                    "Text": "{{i18n:movies.jacob.14}}"
                                 }
                             },
                             "ID": "reaction_0"
@@ -243,7 +243,7 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "I'm not sure why you would invite me to this.$2"
+                                    "Text": "{{i18n:movies.aideen.1}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
@@ -253,7 +253,7 @@
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "I would like to go home now.$2"
+                                    "Text": "{{i18n:movies.aideen.2}}"
                                 }
                             },
                             "ID": "reaction_1"
@@ -266,17 +266,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "This looks most ridiculously trite."
+                                    "Text": "{{i18n:movies.aideen.3}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
-                                    "Script": "/Message \"(Aideen's gaze is fixated on the screen. And she's ... grinning?)\"",
+                                    "Script": "/Message \"{{i18n:movies.aideen.4}}\"",
                                     "Text": ""
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Yes, I was entertained, @. No need to rub it in!"
+                                    "Text": "{{i18n:movies.aideen.5}}"
                                 }
                             },
                             "ID": "reaction_2"
@@ -289,17 +289,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "There's nothing quite like the classics."
+                                    "Text": "{{i18n:movies.aideen.6}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
-                                    "Script": "/Message \"(Aideen is engrossed in the film)\"",
+                                    "Script": "/Message \"{{i18n:movies.aideen.7}}\"",
                                     "Text": ""
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "That was absolutely splendid, @. Thank you for inviting me."
+                                    "Text": "{{i18n:movies.aideen.8}}"
                                 }
                             },
                             "ID": "reaction_3"
@@ -312,13 +312,13 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Good day, @. I do hope I shall enjoy this film."
+                                    "Text": "{{i18n:movies.aideen.9}}"
                                 },
                                 "DuringMovie": null,
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Thank you for inviting me to the pictures, @. I enjoyed myself."
+                                    "Text": "{{i18n:movies.aideen.10}}"
                                 }
                             },
                             "ID": "reaction_0"
@@ -336,17 +336,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "This doesn't look like a movie for kids, @"
+                                    "Text": "{{i18n:movies.eloise.1}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "My stomach feels sick. Can I go home?"
+                                    "Text": "{{i18n:movies.eloise.2}}"
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "I don't ever want to go to the movies with you again. $2"
+                                    "Text": "{{i18n:movies.eloise.3}}"
                                 }
                             },
                             "ID": "reaction_1"
@@ -359,17 +359,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "This looks really fun!"
+                                    "Text": "{{i18n:movies.eloise.4}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
-                                    "Script": "/Message \"(Eloise is bouncing up and down in excitement)\"",
+                                    "Script": "/Message \"{{i18n:movies.eloise.5}}\"",
                                     "Text": ""
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Oh, I loved it! Can we see it again next week, please?$1"
+                                    "Text": "{{i18n:movies.eloise.6}}"
                                 }
                             },
                             "ID": "reaction_2"
@@ -382,17 +382,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "This looks really cool! I hope there's lots of birds in it.$1"
+                                    "Text": "{{i18n:movies.eloise.7}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Did you see that, farmer @? It was awesome!$1"
+                                    "Text": "{{i18n:movies.eloise.8}}"
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Thank you so much! I loved it. I'm going to watch it again and again and again!"
+                                    "Text": "{{i18n:movies.eloise.9}}"
                                 }
                             },
                             "ID": "reaction_3"
@@ -405,13 +405,13 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "There's birds in here! That's really neat"
+                                    "Text": "{{i18n:movies.eloise.10}}"
                                 },
                                 "DuringMovie": null,
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Thanks farmer @! I really liked going to the movies with you."
+                                    "Text": "{{i18n:movies.eloise.11}}"
                                 }
                             },
                             "ID": "reaction_0"
@@ -429,17 +429,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Not feel should be in here. People stare.$2"
+                                    "Text": "{{i18n:movies.lexi.1}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": "sprout_leave",
                                     "Script": "",
-                                    "Text": "Poor plant. All alone."
+                                    "Text": "{{i18n:movies.lexi.2}}"
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Feel weird in my heart. Maybe happy-sad? What that feeling called?"
+                                    "Text": "{{i18n:movies.lexi.3}}"
                                 }
                             },
                             "ID": "reaction_1"
@@ -452,17 +452,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "This place strange... far from sea. Little scared.$2"
+                                    "Text": "{{i18n:movies.lexi.4}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "This.. it is wonderful!."
+                                    "Text": "{{i18n:movies.lexi.5}}"
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Feel, what is word? Inspired. Thank you!"
+                                    "Text": "{{i18n:movies.lexi.6}}"
                                 }
                             },
                             "ID": "reaction_2"
@@ -475,17 +475,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "This place... so strange. Not feel comfortable! People stare."
+                                    "Text": "{{i18n:movies.lexi.7}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "It dark... so noisy. Not understand."
+                                    "Text": "{{i18n:movies.lexi.8}}"
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Not want to go there again. Not pleasant. Sorry...$2"
+                                    "Text": "{{i18n:movies.lexi.9}}"
                                 }
                             },
                             "ID": "reaction_0"
@@ -495,7 +495,7 @@
                 "JosephineK": {
                     "NPCName": "JosephineK",
                     "Reactions": [
-                                              {
+                        {
                             "Tag": "horror",
                             "Response": "dislike",
                             "Whitelist": [],
@@ -503,17 +503,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "I'm really not sure about this one."
+                                    "Text": "{{i18n:movies.josephine.1}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
-                                    "Script": "/message \"(Josephine's eyes are tightly closed)",
+                                    "Script": "/message \"{{i18n:movies.josephine.2}}",
                                     "Text": ""
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "I really cannot understand why anyone would voluntarily watch something like that. Oh, did you enjoy it?"
+                                    "Text": "{{i18n:movies.josephine.3}}"
                                 }
                             },
                             "ID": "reaction_1"
@@ -526,7 +526,7 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "It looks very silly. Perhaps you should have asked Oliver instead."
+                                    "Text": "{{i18n:movies.josephine.4}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
@@ -536,7 +536,7 @@
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Well that's not how I would have chosen to spend a few hours of my day. But thank you for inviting me anyway."
+                                    "Text": "{{i18n:movies.josephine.5}}"
                                 }
                             },
                             "ID": "reaction_2"
@@ -549,17 +549,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Oh, I remember this movie! Guvvy and I watched it on our first date.$1"
+                                    "Text": "{{i18n:movies.josephine.6}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
-                                    "Script": "/message \"(Josephine is smiling at the screen.)\"",
+                                    "Script": "/message \"{{i18n:movies.josephine.7}}\"",
                                     "Text": ""
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Oh, that brought back such memories. Thank you for inviting me."
+                                    "Text": "{{i18n:movies.josephine.8}}"
                                 }
                             },
                             "ID": "reaction_3"
@@ -572,13 +572,13 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "A theater in such a small town! How wondeful. This is very nostalgic."
+                                    "Text": "{{i18n:movies.josephine.9}}"
                                 },
                                 "DuringMovie": null,
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Such a cosy theater. I'm glad you invited me."
+                                    "Text": "{{i18n:movies.josephine.10}}"
                                 }
                             },
                             "ID": "reaction_0"
@@ -588,7 +588,7 @@
                 "OliverK": {
                     "NPCName": "OliverK",
                     "Reactions": [
-                                              {
+                        {
                             "Tag": "horror",
                             "Response": "like",
                             "Whitelist": [],
@@ -596,17 +596,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Mom hates this kinda thing! It's gonna be awesome."
+                                    "Text": "{{i18n:movies.oliver.1}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
-                                    "Script": "/message \"(Oliver is grinning.)",
+                                    "Script": "/message \"{{i18n:movies.oliver.2}}\"",
                                     "Text": ""
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "That was so cheesy and dumb! It was great. Not really very scary though."
+                                    "Text": "{{i18n:movies.oliver.3}}"
                                 }
                             },
                             "ID": "reaction_1"
@@ -619,7 +619,7 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "This is gonna be ridiculous!"
+                                    "Text": "{{i18n:movies.oliver.4}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
@@ -629,7 +629,7 @@
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "That was so fun! I could see it again. And again!$1"
+                                    "Text": "{{i18n:movies.oliver.5}}"
                                 }
                             },
                             "ID": "reaction_2"
@@ -642,17 +642,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Oh, this looks dull. You should ask my mom instead."
+                                    "Text": "{{i18n:movies.oliver.6}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
-                                    "Script": "/message \"(Oliver is asleep)\"",
+                                    "Script": "/message \"{{i18n:movies.oliver.7}}\"",
                                     "Text": ""
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Total snooze-fest! Still, at least I caught some shut-eye."
+                                    "Text": "{{i18n:movies.oliver.8}}"
                                 }
                             },
                             "ID": "reaction_3"
@@ -665,13 +665,13 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "This theater's pretty cool. Heh, I should have a go at that crane machine. I bet I could win!$1"
+                                    "Text": "{{i18n:movies.oliver.9}}"
                                 },
                                 "DuringMovie": null,
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "That was cool. Thanks for letting me hang out with you. You're not half-bad for an adult."
+                                    "Text": "{{i18n:movies.oliver.10}}"
                                 }
                             },
                             "ID": "reaction_0"
@@ -681,7 +681,7 @@
                 "Rosa": {
                     "NPCName": "Rosa",
                     "Reactions": [
-                                              {
+                        {
                             "Tag": "romance",
                             "Response": "like",
                             "Whitelist": [],
@@ -689,17 +689,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Aww, I hear this one's going to tug at my heartstrings."
+                                    "Text": "{{i18n:movies.rosa.1}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
-                                    "Script": "/message \"(Rosa smiling at the screen)",
+                                    "Script": "/message \"{{i18n:movies.rosa.2}}\"",
                                     "Text": ""
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "It was really sweet. Corny, but sometimes corny's okay. You want to go grab a bite to eat?"
+                                    "Text": "{{i18n:movies.rosa.3}}"
                                 }
                             },
                             "ID": "reaction_1"
@@ -712,7 +712,7 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Ye hah! I've never played the game, but I've been looking forward to this one for a while."
+                                    "Text": "{{i18n:movies.rosa.4}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
@@ -722,7 +722,7 @@
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "That was a lot of fun! Let's do it again sometime."
+                                    "Text": "{{i18n:movies.rosa.5}}"
                                 }
                             },
                             "ID": "reaction_2"
@@ -735,17 +735,17 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Horror's not really my thing, but since you asked..."
+                                    "Text": "{{i18n:movies.rosa.6}}"
                                 },
                                 "DuringMovie": {
                                     "ResponsePoint": null,
-                                    "Script": "/message \"(Rosa looks tense)\"",
+                                    "Script": "/message \"{{i18n:movies.rosa.7}}\"",
                                     "Text": ""
                                 },
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Okay well then... back to my creaky old inn room. Certainly won't be hearing monsters scratching tonight.$2"
+                                    "Text": "{{i18n:movies.rosa.8}}"
                                 }
                             },
                             "ID": "reaction_3"
@@ -758,19 +758,19 @@
                                 "BeforeMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "This place is so cute! 'Though I bet the cleaner's kept busy scraping up bird droppings."
+                                    "Text": "{{i18n:movies.rosa.9}}"
                                 },
                                 "DuringMovie": null,
                                 "AfterMovie": {
                                     "ResponsePoint": null,
                                     "Script": "",
-                                    "Text": "Thanks for inviting me, @. It's nice to have a friend in this town.$1"
+                                    "Text": "{{i18n:movies.rosa.10}}"
                                 }
                             },
                             "ID": "reaction_0"
                         }
                     ]
-                },
+                }
             }
         }
     ]

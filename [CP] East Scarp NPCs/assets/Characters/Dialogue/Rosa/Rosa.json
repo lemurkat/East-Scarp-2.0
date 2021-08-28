@@ -1,32 +1,48 @@
 {
     "Introduction": "Hi, I'm Rosa.  I'm new in town.$h#$b#Let me know if you have any work going, I'm up for any odd jobs!",
+    //Monday
     "Mon": "When I have the money, I'll catch a train into Zuzu City; my mom teaches there.",
     "Mon4": "I've worked a few jobs, here and there. Fruit picking, dog-walking.#$b#Cleaning fish. Ugh! I didn't enjoy that one bit!$2#$b#I got hired to herd ducks once. That was something of a challenge!$1",
+    "winter_Mon": "Oh! Can you brush the snow off your boots please? I've just polished the floors.$2",
+    "winter_Mon4": "Do you think this place is haunted, @? Could've sworn I heard footsteps up and down the hall all night.",
+    //Tue
     "Tue": "Back in Fort Jose, my Dad's bakery had the most wonderful aromas.#$b#The war rationing stopped us from making cakes or sweets, but we improvised.$s",
     "Tue2": "Do you love the smell of fresh baked bread? It reminds me of home.",
+    "fall_Tue2":"Are you much of a reader, @?#$b#I love a good mystery - the more tangled the better!",
     "Tue8": "My parents didn't have the happiest relationship. Almost put me off marriage, truth be told.$2#$b#Still, I suppose if the right gal came along...$1",
+    "summer_Tue4":"Ever been surfing, @?#$b#Me? Hah, no. But I did a brief stint as a lifeguard, so I rescued a few!",
+    
+    //Wed
     "Wed": "Fort Jose used to supply all of the nearby factories and steam ships with coal.#$b#When oil began to boom the town started to fall apart... Bit like this place, I guess.$s",
     "Wed2": "It's nice here, but a bit lonely. I wish I had someone to hang out with.$2",
-    "Wed8": "I invited my first girlfriend home when we were seventeen. Mom was pretty cool about it.$1#$b#Nah, we broke up. It's fine though; we still keep in touch.",
+    "summer_Wed6":"I worked in a zoo once. Which sounds way more glamorise than it actually is.#$b#Yeah, way more scooping poop and cleaning up gnawed bones than cuddly baby animals.",
+    "Wed8": "I invited my first girlfriend home when we were seventeen. Mom was pretty stoked I'd found someone.$1#$b#Didn't work out though.$2#$b#Nah, it's fine; we still keep in touch.",
+    "fall_Wed4":"Why is fall the most popular season? I don't get it.#$b#Then again, I have spent the whole morning sweeping leaves out of the gutter.$3#$b#Well, I guess it's called 'fall' for a reason...$1",
+    //Thursday
     "Thu": "Some evenings, I like to take a walk down to the lighthouse. The sunset's really nice.#$b#Would be better if I had someone to watch it with though...$2",
-    "Thu4": "Have you meet Aideen? She's pretty, isn't she?#$b#Are we friends? No... but her cat visits sometimes!$1",
-    "Fri": "I always enjoy the walk into town. The air's so fresh here, not like Fort Jose which always smells of smoke.",
+    "Thu4": "Have you meet Aideen? She's pretty, isn't she?#$b#Are we friends? No. But her cat visits sometimes!$1",
+    "fall_Thu4":"Argh, today's been a bit of a rough day. Just feelings, you know?$2#$b#Anyhow, I decided to do some baking... and now I've got enough to feed the whole town. Ugh. Have a muffin.[651]",
+    //Friday
+    "Fri": "I always enjoy the walk into town. The air's so fresh here, not like Fort Jose which always smelt of smoke.",
     "Fri4": "I've always had a sweet tooth. Mom used to tease me about it.",
     "Fri8": "My parents split a few years back. Sometimes I think they only stayed together that long cos of me.$2",
+    "summer_Fri8": "Fort Jose's a coastal town, so we used to swim all the time. Sometimes we'd even see dolphins.#$b#That was until the war... after that, well, let's just say swimming became a lot less fun.$2",
+    //Saturday
     "Sat": "This? Oh, it's temp work, until the owners return. Free food and board? Can't argue with that!$1",
     "Sat_4": "Aideen's cat came to visit yesterday. Please don't tell her, but I fed him...#$b#He really likes fish!$1",
     "Sat4": "I go into town sometimes, but the groups here... they're so tight-knit.#$b#It's easy to feel like a stranger, don't you find?$2",
+    "summer_Sat2": "Do you enjoy walking on the beach, @? I love the feeling of sand between my toes.",
+    "winter_Sat6": "This place can be a little creepy at night. It's so big, and old.#$b#Sometimes it makes these weird groaning noise. But it's probably not ghosts, right?$2",
+    //Sunday
     "Sun": "Do you see many refugees here, @? Guess not. We had a constant flow of them in Fort Jose.#$b#It's really sad, the things people have gone through to be 'free'.$s",
     "Sun6": "Sometimes I miss Fort Jose, you know. Nah, not homesickness, more something else...#$b#Yearning, perhaps? Although I've got to say, it's pretty nice here.",
-    "summer_Sat2": "Do you enjoy walking on the beach, @? I love the feeling of sand between my toes.",
-    "winter_Mon": "Oh! Can you brush the snow off your boots please? I've just polished the floors.$2",
-    "winter_Mon4": "Do you think this place is haunted, @? Could've sworn I heard footsteps up and down the hall all night.",
-    "winter_Sat6": "This place can be a little creepy at night. It's so big, and old.#$b#Sometimes it makes these weird groaning noise. But it's probably not ghosts, right?$2",
     "winter_Sun4": "Goodness, Ellie can really chew your ears off, can't she?#$b#She caught me throwing bread scraps to the birds... Oh, did I ever get a telling off!$1",
+    //Specific Dates
     "spring_23": "Are you going to being dancing tomorrow, @?#$b#Me? Oh, I suppose so! If the right person asked, of course!",
     "spring_23_2": "I'm looking forward to the dance tomorrow.$1#$b#Yeh, it's corny but fun. I love these old traditions, don't you?",
     "fall_26_2": "Spirit's Eve is my favourite festival. I'm thinking of hosting a party here. What do you say?",
+    //Conversation Topics
     "Josephine_Arrives": "Oh @! Lewis just called to tell me the Governor's wife and son are arriving tomorrow!$1#$b#My first guests! I really hope I don't let him down.$2",
-    "Tristan_Returns": "",
-    "cc_Complete": "I saw the JojaMart is all boarded up. What happened?#$b#I guess that means the cute redhead's left. I never got to say 'goodbye'.$2"
+    "Tristan_Returns": "I heard some weird rumor about a guy that was a cat?#$b#Sounds like a fairy tale to me. Know anything about it, @?",
+    "cc_Complete": "I saw the JojaMart is all boarded up. What happened?#$b#I guess that means the cute redhead's left... I never got to say 'goodbye'.$2"
 }

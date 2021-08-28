@@ -27,7 +27,7 @@
                     "x": 24,
                     "y": 97,
                     "enabled": true,
-                    "label": "East Scarp"
+                    "label": "{{i18n:LocationName.EastScarp}}"
                 }
             }
         },

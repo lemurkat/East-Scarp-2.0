@@ -14,7 +14,7 @@
         "Rosa": "adult/neutral/neutral/neutral/female/not-datable/null/Town/null/fall 7/Custom_ES_InnRoomRosa 5 5/Rosa"
       }
     },
-    {
+   /* {
       "LogName": "NPC Manifestation - makes Rosa datable if you're playing a female char (she may ask you at 8-hearts if you are interested in women romantically and if no, remove - or add - a flag)",
       "Action": "EditData",
       "Target": "Data/NPCDispositions",
@@ -26,7 +26,7 @@
       "When": {
         "PlayerGender": "female"
       }
-    },
+    },*/
     {
       "Action": "EditData",
       "Target": "Data/NPCGiftTastes",

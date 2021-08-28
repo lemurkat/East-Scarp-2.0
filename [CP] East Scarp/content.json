@@ -9,23 +9,23 @@
                 "EastScarpe"
             ]
         },
-        {
+        /*{
             "Name": "Custom_ESVineyard",
             "FromMapFile": "assets/Locations/Outdoors/Vineyard.tmx",
             "MigrateLegacyNames": [
                 "Vineyard"
             ]
-        },
+        },*/
         {
             "Name": "Custom_ESClearingHouse",
-            "FromMapFile": "assets/Locations/Outdoors/ES_ClearingHouse.tmx",
+            "FromMapFile": "assets/Locations/Outdoors/ES_ClearingHouse2.tmx",
             "MigrateLegacyNames": [
                 "ESClearingHouse"
             ]
         },
         { //External Map
             "Name": "Custom_ESMeadowFarm",
-            "FromMapFile": "assets/Locations/Outdoors/MeadowPath.tmx",
+            "FromMapFile": "assets/Locations/Outdoors/MeadowPath.tmx"
         },
         {
             "Name": "Custom_HenryWarp",
@@ -202,7 +202,12 @@
         "WalkTidePools": {
             "AllowValues": "true, false",
             "Default": "false"
-        }
+        },
+        
+		"ObeliskOptions": {
+			"AllowValues": "vanilla, glass, garden",
+			"Default": "vanilla"
+			}
     },
     "DynamicTokens": [
         {
@@ -252,6 +257,21 @@
                 "HasMod": "shekurika.EventLookup"
             }
         },
+        {
+            "LogName": "Obelisk Texture Load",
+            "Action": "Load",
+            "Target": "Buildings/Scarp Obelisk",
+            "FromFile": "assets/Buildings/eastscarpeobelisk_{{ObeliskOptions}}.png"
+        },
+        {
+            "LogName": "Patch Obelisk Blueprint",
+            "Action": "EditData",
+            "Target": "Data/Blueprints",
+            "Entries": {
+                "Scarp Obelisk": "337 5 296 10 393 10/3/2/-1/-1/-2/-1/null/Scarp Obelisk/Warps you to East Scarp./Buildings/none/48/128/-1/null/Farm/5000/true"
+            }
+        },
+        
         // T I L E S H E E T S
         {
             "Action": "Load",
@@ -470,7 +490,7 @@
                 "TownMap": "vanilla"
             }
         },
-        {
+        /*{
             "Action": "EditMap",
             "Target": "Maps/Custom_EastScarpe",
             "MapProperties": {
@@ -480,7 +500,7 @@
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
                 "HasMod |contains=LemurKat.JulietHouse.NPC": false
             }
-        },
+        },*/
         // For Juliet and Jessie
         {
             "Action": "EditMap",
@@ -489,11 +509,32 @@
                 "Warp": "-1 70 Custom_ESClearingHouse 59 19 -1 71 Custom_ESClearingHouse 59 20 -1 72 Custom_ESClearingHouse 59 21 -1 73 Custom_ESClearingHouse 59 22 -1 74 Custom_ESClearingHouse 59 23 79 48 Custom_ESOrchard 1 18 79 49 Custom_ESOrchard 1 19"
             },
             "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+               // "HasMod": "LemurKat.JulietHouse.NPC"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ESClearingHouse",
+            "FromFile": "assets/Locations/Outdoors/ES_ClearingHouse.tmx",
+            "ToArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 60,
+                "Height": 18
+            },
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 60,
+                "Height": 18
+            },
+            "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
                 "HasMod": "LemurKat.JulietHouse.NPC"
             }
         },
-        {
+        /*{
             "Action": "EditMap",
             "Target": "Maps/Town",
             "TextOperations": [
@@ -511,7 +552,7 @@
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
                 "HasMod |contains=LemurKat.JulietHouse.NPC": false
             }
-        },
+        },*/
         {
             "Action": "EditMap",
             "Target": "Maps/Town",
@@ -647,7 +688,7 @@
                     "SetProperties": {
                         "TouchAction": "LoadMap Custom_ESMeadowFarm 30 39"
                     }
-                },
+                }
             ]
         },
         {
@@ -765,7 +806,7 @@
                 "Custom_EastScarpe": "-1/-1/-1/-1/153 -1 142 0 1123 0 1124 0 1146 0 1147 0 152 -1 129 1 147 1 1071 1 1088 1 1075 1 131 2 148 2 708 2 1120 2 1137 2 1139 2 1143 2 1058 2 1076 2 267 2/153 -1 142 0 144 0 1122 0 1124 0 1148 0 1082 0 1146 0 152 -1 154 1 1071 1 1075 1 128 2 130 2 146 2 149 2 150 2 155 2 708 2 267 2 1120 2 1129 2 1143 2 1068 2 1070 2/153 -1 142 0 269 0 1121 0 1146 0 1149 0 152 -1 129 1 154 1 155 1 1075 1 131 2 148 2 150 2 705 2 1135 2 1136 2 1059 2 1069 2/153 -1 142 0 269 0 1146 0 1079 0 1081 0 152 -1 147 1 155 1 1075 1 708 2 130 2 131 2 146 2 150 2 151 2 154 2 705 2 1135 2 1138 2 1126 2 1060 2 1061 2 1072 2 1080 2 1109 2/107 .01 378 .08 579 .1 588 .1 581 .1 583 .1 102 .15 390 .25 330 1",
                 "Custom_ESDeepDark": "-1/-1/-1/-1/153 -1 156 -1 157 -1 158 -1 1145 -1 1062 -1 1075 -1 1095 -1 1184 -1 1185 -1 1114 -1/153 -1 156 -1 157 -1 158 -1 1145 -1 1062 -1 1075 -1 1095 -1 1184 -1 1185 -1 1114 -1/153 -1 156 -1 157 -1 158 -1 1145 -1 1062 -1 1075 -1 1095 -1 1184 -1 1185 -1 1114 -1/153 -1 156 -1 157 -1 158 -1 1145 -1 1062 -1 1075 -1 1095 -1 1184 -1 1185 -1 1114 -1/107 .01 378 .08 579 .1 588 .1 581 .1 583 .1",
                 "Custom_ESOrchard": "-1/-1/-1/-1/139 -1 698 -1 147 -1 136 -1 699 -1 138 -1 129 -1 1073 -1 1086 -1 1092 -1/139 -1 137 -1 136 -1 699 -1 148 -1 1073 -1 1086 -1 1092 -1/698 -1 137 -1 136 -1 699 -1 1086 -1 1092 -1/147 -1 136 -1 699 -1/110 .1 118 .2 100 .05 103 .05 106 .05 102 .15 390 .25 330 1",
-                "Custom_ESVineyard": "18 .9/402 .9/410 .6/418 .7 414 .1 283 .5/137 -1 132 -1 143 -1 145 -1 153 -1 706 -1/138 -1 132 -1 144 -1 145 -1 153 -1 706 -1 704 -1/139 -1 137 -1 132 -1 140 -1 143 -1 153 -1 706 -1 699 -1/132 -1 140 -1 141 -1 143 -1 144 -1 153 -1 707 -1 699 -1/378 .2 110 .2 583 .1 102 .2 390 .25 330 1",
+                //"Custom_ESVineyard": "18 .9/402 .9/410 .6/418 .7 414 .1 283 .5/137 -1 132 -1 143 -1 145 -1 153 -1 706 -1/138 -1 132 -1 144 -1 145 -1 153 -1 706 -1 704 -1/139 -1 137 -1 132 -1 140 -1 143 -1 153 -1 706 -1 699 -1/132 -1 140 -1 141 -1 143 -1 144 -1 153 -1 707 -1 699 -1/378 .2 110 .2 583 .1 102 .2 390 .25 330 1",
                 "Custom_ESClearingHouse": "18 .9/402 .9/410 .6/418 .7 414 .1 283 .5/137 -1 132 -1 143 -1 145 -1 153 -1 706 -1/138 -1 132 -1 144 -1 145 -1 153 -1 706 -1 704 -1/139 -1 137 -1 132 -1 140 -1 143 -1 153 -1 706 -1 699 -1/132 -1 140 -1 141 -1 143 -1 144 -1 153 -1 707 -1 699 -1/378 .2 110 .2 583 .1 102 .2 390 .25 330 1"
             },
             "When": {
@@ -1032,7 +1073,13 @@
         {
             "LogName": "Events for East Scarpe",
             "Action": "Load",
-            "Target": "Data/Events/Custom_EastScarpe, Data/Events/Custom_DeepMountains, Data/Events/Custom_ESSilo, Data/Events/Custom_ESHouse1, Data/Events/Custom_ESHouse2, Data/Events/Custom_ESHouse3, Data/Events/Custom_ESHouse4, Data/Events/Custom_EastScarpeInn, Data/Events/Custom_ESOrchard, Data/Events/Custom_ESSeaCave, Data/Events/Custom_ESClearingHouse",
+            "Target": "Data/Events/Custom_EastScarpe, Data/Events/Custom_ESDeepMountains, Data/Events/Custom_ESSilo, Data/Events/Custom_ESHouse1, Data/Events/Custom_ESHouse2, Data/Events/Custom_ESHouse3, Data/Events/Custom_ESHouse4, Data/Events/Custom_EastScarpeInn, Data/Events/Custom_ESOrchard, Data/Events/Custom_ESSeaCave, Data/Events/Custom_ESClearingHouse",
+            "FromFile": "assets/Data/EastScarpeEvents.json"
+        },
+        {
+            "LogName": "Events for VetHouse",
+            "Action": "Load",
+            "Target": "Data/Events/Custom_ESVetHouse, Data/Events/Custom_ESBirdHide, Data/Events/Custom_ESOrchardHouse ",
             "FromFile": "assets/Data/EastScarpeEvents.json"
         },
         //TileData messages
@@ -1190,10 +1237,10 @@
             "When": {
                 "River": "true",
                 "Time": "{{Range: 610, 1800}}",
-                "HasSeenEvent |contains=80090001": false
+                "HasSeenEvent |contains=63070010": false
             }
         },
-        {
+       /* {
             "Action": "EditMap",
             "Target": "Maps/Custom_ESOrchard",
             "FromFile": "assets/Patches/Orchard_quarry_NoBridge.tmx",
@@ -1207,9 +1254,9 @@
             "When": {
                 "River": "false",
                 "Time": "{{Range: 610, 1800}}",
-                "HasSeenEvent |contains=80090001": false
+                "HasSeenEvent |contains=63070010": false
             }
-        },
+        },*/
         {
             "LogName": "House Interior when married to Aideen",
             "Action": "EditMap",
@@ -1328,7 +1375,7 @@
             "Target": "Maps/Custom_EastScarpe",
             "When": {
                 "HasMod": "PeacefulEnd.CustomCompanions",
-                //"HasSeenEvent":""
+                "HasSeenEvent":"57879902"
             },
             "MapTiles": [
                 {
@@ -1340,8 +1387,8 @@
                     "SetProperties": {
                         "CustomCompanions": "Spawn 2 LemurKat.EastScarpeCompanions.Fairy_Penguin"
                     }
-                },
-                {
+                }
+              /*  {
                     "Position": {
                         "X": 16,
                         "Y": 117
@@ -1350,7 +1397,7 @@
                     "SetProperties": {
                         "CustomCompanions": "Spawn 1 LemurKat.EastScarpeCompanions.Fairy_Penguin_Chick"
                     }
-                }
+                }*/
             ]
         },
         /* //Adds trapdoor to Mine
@@ -1379,6 +1426,11 @@
             "When": {
                 "HasMod": "Pillow.Luma"
             }
+        },
+{ // Adds NPC Map Locations
+            "Action": "Include",
+            "FromFile": "assets/Data/NPCMapLocations.json",
+		"When":{"HasMod":"Bouhm.NPCMapLocations"}
         }
     ]
 }

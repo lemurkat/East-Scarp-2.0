@@ -1297,17 +1297,17 @@
   </object>
   <object id="112" name="TileData" x="288" y="544" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap 77 115 Custom_EastScarpe"/>
+    <property name="TouchAction" value="LoadMap Custom_EastScarpe 77 115"/>
    </properties>
   </object>
   <object id="113" name="TileData" x="304" y="544" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap 77 115 Custom_EastScarpe"/>
+    <property name="TouchAction" value="LoadMap Custom_EastScarpe 77 115"/>
    </properties>
   </object>
   <object id="114" name="TileData" x="320" y="544" width="16" height="16">
    <properties>
-    <property name="TouchAction" value="LoadMap 77 115 Custom_EastScarpe"/>
+    <property name="TouchAction" value="LoadMap Custom_EastScarpe 77 115"/>
    </properties>
   </object>
  </objectgroup>

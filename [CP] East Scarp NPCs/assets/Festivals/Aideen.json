@@ -23,7 +23,7 @@
             "Action": "EditData",
             "Target": "data/festivals/winter25",
             "Entries": {
-                "Aideen": "Are you enjoying the festival, @? The secret gift giving tradition is so quaint, don't you think?#$b#I do hope I receive a well-considered gift this year."
+                "Aideen": "{{i18n:festivals.aideen.winter25}}"
             }
         },
         {
@@ -55,7 +55,7 @@
             "Action": "EditData",
             "Target": "data/festivals/spring24",
             "Entries": {
-                "Aideen": "Folk dancing? How very rustic. This bears little semblance to the dances I attended in Grampleton. Now, those were sophisticated affairs."
+                "Aideen": "{{i18n:festivals.aideen.spring24}}"
             }
         },
         {
@@ -87,7 +87,7 @@
             "Action": "EditData",
             "Target": "data/festivals/summer11",
             "Entries": {
-                "Aideen": "Oh, the sun is overbearing! I seek sanctuary, here amongst my friends, the trees."
+                "Aideen": "{{i18n:festivals.aideen.summer11}}"
             }
         },
         {
@@ -110,7 +110,7 @@
             "Action": "EditData",
             "Target": "data/festivals/summer28",
             "Entries": {
-                "Aideen": "I dare not get too close. They may look beautiful and mysterious, but they are also highly poisonous!$2"
+                "Aideen": "{{i18n:festivals.aideen.summer28}}"
             }
         },
         {
@@ -133,8 +133,8 @@
             "Action": "EditData",
             "Target": "data/festivals/fall16",
             "Entries": {
-                "Aideen": "Are you intending to get your fortune told, @?#$b#Oh! I've already had mine! Apparently my quest for a suitor shall be fulfilled before the year reaches its end!$4",
-                "Aideen_spouse": "My love, we do not need a spiritulist to reveal our future!$1#$b#What does it hold? Oh, you shall see tonight.$4"
+                "Aideen": "{{i18n:festivals.aideen.fall16}}",
+                "Aideen_spouse": "{{i18n:festivals.aideen.fall16.spouse}}"
             }
         },
         {
@@ -181,7 +181,7 @@
             "Action": "EditData",
             "Target": "data/festivals/winter8",
             "Entries": {
-                "Aideen": "Oh hello @. Yes, I confess, I snuck in to see the ice sculptures.$4"
+                "Aideen": "{{i18n:festivals.aideen.winter8}}"
             }
         }
     ]

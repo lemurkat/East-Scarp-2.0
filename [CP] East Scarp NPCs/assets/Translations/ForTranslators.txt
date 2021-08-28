@@ -1,0 +1,20 @@
+{
+
+"Changes":[
+    		},
+		{
+			"LogName": "Beatrice Summer",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Beatrice",
+			"Entries": {
+				"Resort_Entering": "What a lovely place!",
+				"Resort_Leaving": "'Til we meet again, I bid you au revoir, ile juste!",
+				"Resort_Shore": "Sacre bleu! The water, she is chilling me toes!",
+				"Resort_Umbrella": "I do 'ope everything is well at home.",
+				"Resort_Wander": "These parrots, they are beautiful!",
+				"Resort_Bar": "Merci, Gus. Will you join me for a drink, @?",
+				"Resort": "My Raoul would so have loved this place. Ah, he had an adventuring 'eart, 'e did."
+			}
+		},
+]
+}

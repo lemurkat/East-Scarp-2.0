@@ -12,13 +12,17 @@
 			"Name": "Custom_ES_DaoHouse",
 			"FromMapFile": "assets/Maps/DaoHouse.tmx"
 		},
-{
+		{
 			"Name": "Custom_ES_TNPCWaitingRoomWarp",
 			"FromMapFile": "assets/Maps/TNPCWaitingRoom.tmx"
 		},
 		{
 			"Name": "Custom_ES_VetAwayWarp",
 			"FromMapFile": "assets/Maps/VetAwayWarp.tmx"
+		},
+		{
+			"Name": "Custom_ES_CatWarpRoom",
+			"FromMapFile": "assets/Maps/CatWarpRoom.tmx"
 		}
 	],
 	"ConfigSchema": {
@@ -38,6 +42,20 @@
 			"Value": "None-of-your-business",
 			"When": {
 				"HasFlag": "LexiNoneBusiness"
+			}
+		},
+		{
+			"Name": "cattalk",
+			"Value": "false",
+			"When": {
+				"HasSeenEvent |contains=50706121": false
+			}
+		},
+		{
+			"Name": "cattalk",
+			"Value": "true",
+			"When": {
+				"HasSeenEvent |contains=50706121": true
 			}
 		}
 	],
@@ -66,10 +84,11 @@
 			"Action": "EditData",
 			"Target": "Data/NPCDispositions",
 			"Entries": {
-				"OliverK": "teen/polite/shy/negative/male/not-datable//Other//JosephineK 'mother'/Custom_EastScarpeInn -100 -100/Oliver",
-				"JosephineK": "adult/polite/neutral/negative/female/not-datable/GovernorK/Other//OliverK 'son'/Custom_EastScarpeInn -100 -100/Josephine",
-				"RichieTheMacaw": "adult/rude/outgoing/negative/male/not-datable//other///Custom_ESVetHouse 8 21/The Real Macaw",
-				"Kataryna": "adult/rude/outgoing/positive/female/not-datable//Other///Custom_ES_TNPCWaitingRoomWarp 2 5/Kataryna"
+				"OliverK": "teen/polite/shy/negative/male/not-datable//Other//JosephineK 'mother'/Custom_EastScarpeInn -100 -100/{{i18n:Name.Oliver}}",
+				"JosephineK": "adult/polite/neutral/negative/female/not-datable/GovernorK/Other//OliverK 'son'/Custom_EastScarpeInn -100 -100/{{i18n:Name.Josephine}}",
+				"RichieTheMacaw": "adult/rude/outgoing/negative/male/not-datable//other///Custom_ESVetHouse 8 21/{{i18n:Name.Richie}}",
+				"Kataryna": "adult/rude/outgoing/positive/female/not-datable//Other///Custom_ES_TNPCWaitingRoomWarp 2 5/{{i18n:Name.Kataryna}}",
+				"LadySheba": "teen/rude/shy/negative/female/not-datable//other///Custom_ES_CatWarpRoom 2 3/{{i18n:Name.Sheba}}"
 			}
 		},
 		{
@@ -164,7 +183,8 @@
 				"Leximonster": "PerfectFriend,IslandVisit,TownQuest",
 				"OliverK": "All",
 				"JosephineK": "All",
-				"Kataryna": "All"
+				"Kataryna": "All",
+				"LadySheba": "All"
 			}
 		},
 		{
@@ -196,7 +216,7 @@
 			"Target": "Data/AntiSocialNPCs",
 			"Entries": {
 				"DuckNPC": true,
-				"Duck2NPC": true,
+				"Duck2NPC": true
 			},
 			"When": {
 				"HasSeenEvent |contains=57870002": true,
@@ -209,7 +229,8 @@
 			"Target": "Data/AntiSocialNPCs",
 			"Entries": {
 				"RichieTheMacaw": true,
-				"Kataryna": true
+				"Kataryna": true,
+				"LadySheba": true
 			}
 		},
 		//Ducks
@@ -267,7 +288,7 @@
 			"Target": "Characters/Governor_walking",
 			"FromFile": "assets/Images/GovernorK.png"
 		},
-		{ //Richie Macaw
+		{ //Richie Macaw --------------------------------------------------
 			"LogName": "Richie the Macaw",
 			"Action": "Load",
 			"Target": "Characters/RichieTheMacaw",
@@ -285,12 +306,60 @@
 			"Target": "Characters/Dialogue/RichieTheMacaw",
 			"FromFile": "assets/Characters/Dialogue/RichieTheMacaw.json"
 		},
+		// Lady Sheba ------------------------------------------------------
+		{
+			"LogName": "Stray Cat",
+			"Action": "Load",
+			"Target": "Portraits/LadySheba",
+			"FromFile": "assets/Images/LadySheba_Portrait.png"
+		},
+		{
+			"LogName": "Stray Cat sprites",
+			"Action": "Load",
+			"Target": "Characters/LadySheba",
+			"FromFile": "assets/Images/LadySheba.png"
+		},
+		{
+			"LogName": "Stray Cat Dialogue and Schedule",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/LadySheba, Characters/schedules/LadySheba",
+			"FromFile": "assets/{{Target}}.json",
+			"When": {
+				"HasFlag": "EastScarp.SpecialOrders.LadySheba3Mail"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Characters/Dialogue/LadySheba2.json",
+			"When": {
+				"HasSeenEvent": "50706121"
+			}
+		},
+		{
+			"LogName": "Animations",
+			"Action": "EditData",
+			"Target": "Data/animationDescriptions",
+			"Entries": {
+				"sheba_grooming": "16 17 18 19/20 20 20 20 20 21 21 21 21 22 22 22 22 23 23 23 23 21 21 21 21 21 21 22 22 22 22 23 23 23 23 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18/19 18 17 16",
+				"sheba_nap": "28/28 28 28 28 28 28 28 28 29 29 29 29 29 29 29 29/28"
+			}
+		},
+		//******************************************************************************************************************//
+		{
+			"LogName": "NPC Gift Tastes",
+			"Action": "EditData",
+			"Target": "Data/NPCGiftTastes",
+			"Entries": {
+				"DuckNPC": "{{i18n:gifts.duck.love}}/398 216/{{i18n:gifts.duck.like}}//{{i18n:gifts.duck.dislike}}/74 2 293/{{i18n:gifts.duck.hate}}//{{i18n:gifts.duck.neutral}}/-4 -81 -2 -75 -79 -7 -26 446/",
+				"LadySheba": "{{i18n:gifts.sheba.love.{{cattalk}}}}/130 139 148 198 227 267 424 426 715 874/{{i18n:gifts.sheba.like.{{cattalk}}}}/-4 168 176 442 195 209 228 305 444 446 684 685 732/{{i18n:gifts.sheba.dislike.{{cattalk}}}}/-81 -2 -75 -79 -7/{{i18n:gifts.sheba.hate.{{cattalk}}}}/2 220 221 222 223 -26 395/{{i18n:gifts.sheba.neutral.{{cattalk}}}}//"
+			}
+		},
 		{
 			"LogName": "NPC Manifestation",
 			"Action": "EditData",
 			"Target": "Data/NPCDispositions",
 			"Entries": {
-				"DuckNPC": "adult/rude/outgoing/positive/male/not-datable/null/Town/null//Custom_EastScarpe 21 62/The Emperor"
+				"DuckNPC": "adult/rude/outgoing/positive/male/not-datable/null/Town/null//Custom_EastScarpe 21 62/{{i18n:Name.duck1}}"
 			},
 			"When": {
 				"HasSeenEvent": "57870002",
@@ -302,7 +371,7 @@
 			"Action": "EditData",
 			"Target": "Data/NPCDispositions",
 			"Entries": {
-				"Duck2NPC": "adult/rude/shy/positive/female/not-datable/null/Town/null//Custom_EastScarpe 22 61/The Empress"
+				"Duck2NPC": "adult/rude/shy/positive/female/not-datable/null/Town/null//Custom_EastScarpe 22 61/{{i18n:Name.duck2}}"
 			},
 			"When": {
 				"HasSeenEvent": "57870011",
@@ -322,7 +391,7 @@
 			"Action": "EditData",
 			"Target": "Data/NPCDispositions",
 			"Entries": {
-				"Beatrice": "adult/neutral/shy/negative/female/non-datable/null/Town/spring 17//Custom_ESLighthouse 11 10/Beatrice"
+				"Beatrice": "adult/neutral/shy/negative/female/non-datable/null/Town/spring 17//Custom_ESLighthouse 11 10/{{i18n:Name.Beatrice}}"
 			}
 		},
 		{
@@ -367,7 +436,7 @@
 			},
 			"Entries": {
 				"spring": "700 NagitoCottage 11 5 0/800 Custom_EastScarpe 15 107 2 nagito_read/1700 NagitoCottage 5 5 2/2300 NagitoCottage 1 6 0 nagito_sleep",
-				"summer": "700 NagitoCottage 11 5 0/800 Custom_EastScarpe 15 107 2 nagito_read/1700 NagitoCottage 5 5 2/2300 NagitoCottage 1 6 0 nagito_sleep",
+				"summer": "700 NagitoCottage 11 5 0/800 Custom_EastScarpe 15 107 2 nagito_read/1700 NagitoCottage 5 5 2/2300 NagitoCottage 1 6 0 nagito_sleep"
 			}
 		},
 		{
@@ -387,9 +456,9 @@
 			"Action": "EditData",
 			"Target": "Data/Events/Farm",
 			"Entries": {
-				"57873000/j 153/z summer/z winter/z spring/u 28/Hn Oliver_Meet/Hn Josephine_Meet/t 600 900": "continue/64 15/farmer 64 16 2 Lewis 64 18 0/addConversationTopic Josephine_Arrives 1/addConversationTopic Josephine_Introduction 7/pause 1500/speak Lewis \"Good morning, @. I'm pleased to have caught you at home.#$b#I have a very important task for you.\"/pause 500/emote farmer 8/pause 1500/speak Lewis \"The Governor is sending his wife and son to stay here, in Pelican Town!$1\"/pause 500/jump farmer 3/emote farmer 16/pause 1500/speak Lewis \"Apparently the child's not well, and he's hoping the country air will help. Poor kid...$2#$b#But what an opportunity for us!$1\"/emote farmer 60/speak Lewis \"They're moving into East Scarpe Inn for the winter, and I'm relying on you, @, to help make them feel welcome.#$b#What do you say?\"/pause 500/emote farmer 40/quickQuestion #Of course I will!#I'm busy enough.#Isn't that your job?#What's in it for me?(break)emote Lewis 24\\pause 1000\\speak Lewis \"Excellent. I knew I could rely on you, @!\"(break)emote Lewis 40\\pause 500\\speak Lewis \"Oh yes, I completely understand! But there's always time for a little neighborly friendliness, right?\"(break)emote Lewis 28\\pause 500\\speak Lewis \"Well...yes. But all of us have our part to play.$4\"(break)emote Lewis 12\\speak Lewis \"The satisfaction of being a good neighbor. Isn't that reward enough?\"/pause 1000/speak Lewis \"Anyway, @, I'm sure you'll do Pelican Town proud.\"/pause 1500/faceDirection Lewis 2/emote farmer 28/pause 1000/end"
+				"57873000/j 153/z summer/z winter/z spring/u 28/Hn Oliver_Meet/Hn Josephine_Meet/t 600 900": "continue/64 15/farmer 64 16 2 Lewis 64 18 0/addConversationTopic Josephine_Arrives 1/addConversationTopic Josephine_Introduction 7/pause 1500/speak Lewis \"{{i18n:57873000.01}}\"/pause 500/emote farmer 8/pause 1500/speak Lewis \"{{i18n:57873000.02}}\"/pause 500/jump farmer 3/emote farmer 16/pause 1500/speak Lewis \"{{i18n:57873000.03}}\"/emote farmer 60/speak Lewis \"{{i18n:57873000.04}}\"/pause 500/emote farmer 40/quickQuestion #{{i18n:57873000.q1}}#{{i18n:57873000.q2}}#{{i18n:57873000.q3}}#{{i18n:57873000.q4}}(break)emote Lewis 24\\pause 1000\\speak Lewis \"{{i18n:57873000.r1}}\"(break)emote Lewis 40\\pause 500\\speak Lewis \"{{i18n:57873000.r2}}\"(break)emote Lewis 28\\pause 500\\speak Lewis \"{{i18n:57873000.r3}}\"(break)emote Lewis 12\\speak Lewis \"{{i18n:57873000.r4}}\"/pause 1000/speak Lewis \"{{i18n:57873000.05}}\"/pause 1500/faceDirection Lewis 2/emote farmer 28/pause 1000/end"
 			}
-		},
+		}
 		/* Event Key:
 				57870000+ = Jacob and Eloise
 				57871000+ = Aideen
