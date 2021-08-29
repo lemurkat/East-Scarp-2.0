@@ -57,6 +57,22 @@
 			"When": {
 				"HasSeenEvent |contains=50706121": true
 			}
+		},
+		{
+			"Name": "Sheba.nap",
+			"Value": "{{Random:Custom_EastScarpe 7 83 2 sheba_nap,Custom_EastScarpe 65 76 2 sheba_nap,Custom_EastScarpe 23 79 2 sheba_nap,Custom_EastScarpe 3 101 2 sheba_nap}}"
+		},
+		{
+			"Name": "Sheba.sit",
+			"Value": "{{Random:Custom_EastScarpe 10 86 2 sheba_sit,Custom_EastScarpe 28 104 2 sheba_sit,Custom_EastScarpe 1 12 2 sheba_sit,Custom_EastScarpe 23 102 2 sheba_sit,Custom_ESOrchard 2 15 sheba_sit}}"
+		},
+		{
+			"Name": "Sheba.wander",
+			"Value": "{{Random:Custom_EastScarpe 75 80 2 square_5_5,Custom_EastScarpe 26 70 0 square_7_0_0,Custom_EastScarpe 22 16 2 square_5_4,Custom_EastScarpe 45 110 0 square_5_0_0,Custom_EastScarpe 16 102 square_5_5,Custom_EastScarpe 45 66 0 square 5_0}}"
+		},
+		{
+			"Name": "Sheba.groom",
+			"Value": "{{Random:Custom_EastScarpe 11 62 2 sheba_grooming,Custom_EastScarpe 8 53 2 sheba_grooming,Custom_EastScarpe 28 93 2 sheba_grooming,Custom_EastScarpe 53 61 2 sheba_grooming,Custom_EastScarpe 13 92 2 sheba_grooming}}"
 		}
 	],
 	"Changes": [
@@ -84,8 +100,8 @@
 			"Action": "EditData",
 			"Target": "Data/NPCDispositions",
 			"Entries": {
-				"OliverK": "teen/polite/shy/negative/male/not-datable//Other//JosephineK 'mother'/Custom_EastScarpeInn -100 -100/{{i18n:Name.Oliver}}",
-				"JosephineK": "adult/polite/neutral/negative/female/not-datable/GovernorK/Other//OliverK 'son'/Custom_EastScarpeInn -100 -100/{{i18n:Name.Josephine}}",
+				"OliverK": "teen/polite/shy/neutral/male/not-datable//Other//JosephineK 'mother'/Custom_ES_TNPCWaitingRoomWarp 6 5/{{i18n:Name.Oliver}}",
+				"JosephineK": "adult/polite/neutral/positive/female/not-datable/GovernorK/Other//OliverK 'son'/Custom_ES_TNPCWaitingRoomWarp 7 5/{{i18n:Name.Josephine}}",
 				"RichieTheMacaw": "adult/rude/outgoing/negative/male/not-datable//other///Custom_ESVetHouse 8 21/{{i18n:Name.Richie}}",
 				"Kataryna": "adult/rude/outgoing/positive/female/not-datable//Other///Custom_ES_TNPCWaitingRoomWarp 2 5/{{i18n:Name.Kataryna}}",
 				"LadySheba": "teen/rude/shy/negative/female/not-datable//other///Custom_ES_CatWarpRoom 2 3/{{i18n:Name.Sheba}}"
@@ -264,6 +280,12 @@
 			"Target": "Characters/Duck2NPC",
 			"FromFile": "assets/Images/Duck-Mandarin-female.png"
 		},
+		{ //Hen
+			"LogName": "Mandarin Duck",
+			"Action": "Load",
+			"Target": "Characters/Duck2NPC_swimming",
+			"FromFile": "assets/Images/Duck-Mandarin-female_water.png"
+		},
 		{
 			"LogName": "Mandarin Duck",
 			"Action": "Load",
@@ -325,7 +347,15 @@
 			"Target": "Characters/Dialogue/LadySheba, Characters/schedules/LadySheba",
 			"FromFile": "assets/{{Target}}.json",
 			"When": {
-				"HasFlag": "EastScarp.SpecialOrders.LadySheba3Mail"
+				"HasSeenEvent": "57879903"
+			}
+		},
+		{
+			"LogName": "Stray Cat Dialogue and Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/LadySheba",
+			"Entries": {
+				"spring": "900 {{sheba.groom}}/1100 {{sheba.wander}}/1300 {{sheba.nap}}/1500 {{sheba.sit}}/1800 {{sheba.wander}}/2200 Custom_ES_CatWarpRoom 2 4 sheba_nap"
 			}
 		},
 		{
@@ -341,7 +371,8 @@
 			"Target": "Data/animationDescriptions",
 			"Entries": {
 				"sheba_grooming": "16 17 18 19/20 20 20 20 20 21 21 21 21 22 22 22 22 23 23 23 23 21 21 21 21 21 21 22 22 22 22 23 23 23 23 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18/19 18 17 16",
-				"sheba_nap": "28/28 28 28 28 28 28 28 28 29 29 29 29 29 29 29 29/28"
+				"sheba_nap": "28/28 28 28 28 28 28 28 28 29 29 29 29 29 29 29 29/28",
+				"sheba_sit": "16 17 18/19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 19 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18/18 17 16"
 			}
 		},
 		//******************************************************************************************************************//

@@ -2,17 +2,9 @@
 
 57873001    (BusStop) Arriving: /e 57873000/t 600 1200 < This one can be missed if you don't trigger it the day after the orginal event 
 
-57873014    (Town) Josephine gets the tour: 57873014/e 57873000/f JosephineK 20/w sunny/t 900 1600 < Triggered after you've spoken to her once.
-
-57873016    (LeahHouse) Admires sculpture: 57873016/e 57873001/k 57873005/f JosephineK 250/p Leah < one heart, Leah must be home
-
 57873002    (SeedShop) Pierre Recognises Josephine: 57873002/e 57873000/p JosephineK/f JosephineK 500 < Two hearts, visit the Seed Shop the same time Josephine does
 
 57873003    (EastScarpeInn) Video games on Saturday night: 57873003/f OliverK 500/p OliverK/t 1800 2400/d Mon Tue Wed Thu Fri Sun < Saturday nights only, 2 hearts
-
-57873012   (EastScarpeInn) Argument over reunion concert: 57873012/f OliverK 1500/f JosephineK 1000/p OliverK/p JosephineK < 6 hearts Olly, 4 hearts Josie
-
-57873013    (EastScarpeInn) Reminscing over Zuzu Songbird: 57873013/e 57873012/f JosephineK 1500/p JosephineK < 6 hearts Josie must have seen previous
 
 57872008    (East Scarpe) Oliver rescues Friend Gull: 57872008/p OliverK/f OliverK 1000/e 57872007/t 1300 1800 < must have seen Lexi's event with Friend Gull
 
@@ -23,6 +15,15 @@
 57872011    (East Scarpe) Part Four: Oliver releases the gull: 57872011/e 57872010/A OliverLexiGull/d Mon Thu Sat Sun/t 600 1100 < one week later, Olly releases gull, meets Lexi
 
 57872012    (Sea Caves) Oliver brings cookies: 57872012/e 57872011/d Tue Wed Thu/t 0800 1100 < Olly brings cookies. Unsure why not on a school day. Probably so its a few days later not the same day as above
+
+57873012   (EastScarpeInn) Argument over reunion concert: 57873012/f OliverK 1500/f JosephineK 1000/p OliverK/p JosephineK < 6 hearts Olly, 4 hearts Josie
+
+57873013    (EastScarpeInn) Reminscing over Zuzu Songbird: 57873013/e 57873012/f JosephineK 1500/p JosephineK < 6 hearts Josie must have seen previous
+
+57873014    (Town) Josephine gets the tour: 57873014/e 57873000/f JosephineK 20/w sunny/t 900 1600 < Triggered after you've spoken to her once.
+
+57873016    (LeahHouse) Admires sculpture: 57873016/e 57873001/k 57873005/f JosephineK 250/p Leah < one heart, Leah must be home
+
 
 57873015    (East Scarpe) Farmer walks in on Oliver telling Kennedy: 57873015/e 57872012/t 1600 2100"/e 57872012/t 1600 2100"
 

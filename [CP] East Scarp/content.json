@@ -203,11 +203,10 @@
             "AllowValues": "true, false",
             "Default": "false"
         },
-        
-		"ObeliskOptions": {
-			"AllowValues": "vanilla, glass, garden",
-			"Default": "vanilla"
-			}
+        "ObeliskOptions": {
+            "AllowValues": "vanilla, glass, garden",
+            "Default": "vanilla"
+        }
     },
     "DynamicTokens": [
         {
@@ -271,7 +270,6 @@
                 "Scarp Obelisk": "337 5 296 10 393 10/3/2/-1/-1/-2/-1/null/Scarp Obelisk/Warps you to East Scarp./Buildings/none/48/128/-1/null/Farm/5000/true"
             }
         },
-        
         // T I L E S H E E T S
         {
             "Action": "Load",
@@ -510,7 +508,7 @@
             },
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
-               // "HasMod": "LemurKat.JulietHouse.NPC"
+                // "HasMod": "LemurKat.JulietHouse.NPC"
             }
         },
         {
@@ -1209,7 +1207,7 @@
                 "Time": "{{Range: 1230, 1800}}"
             }
         },
-      /*  {
+        /*  {
             "Action": "EditMap",
             "Target": "Maps/Custom_ESOrchard",
             "FromFile": "assets/Patches/Orchard_river.tmx",
@@ -1240,7 +1238,7 @@
                 "HasSeenEvent |contains=63070010": false
             }
         },
-       /* {
+        /* {
             "Action": "EditMap",
             "Target": "Maps/Custom_ESOrchard",
             "FromFile": "assets/Patches/Orchard_quarry_NoBridge.tmx",
@@ -1373,9 +1371,11 @@
         {
             "Action": "EditMap",
             "Target": "Maps/Custom_EastScarpe",
+            "Update": "OnLocationChange",
             "When": {
                 "HasMod": "PeacefulEnd.CustomCompanions",
-                "HasSeenEvent":"57879902"
+                "HasSeenEvent": "57879902",
+                "Time": "{{Range: 1700, 2100}}"
             },
             "MapTiles": [
                 {
@@ -1388,7 +1388,7 @@
                         "CustomCompanions": "Spawn 2 LemurKat.EastScarpeCompanions.Fairy_Penguin"
                     }
                 }
-              /*  {
+                /*  {
                     "Position": {
                         "X": 16,
                         "Y": 117
@@ -1398,6 +1398,56 @@
                         "CustomCompanions": "Spawn 1 LemurKat.EastScarpeCompanions.Fairy_Penguin_Chick"
                     }
                 }*/
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_EastScarpe",
+            "Update": "OnLocationChange",
+            "When": {
+                "HasMod": "PeacefulEnd.CustomCompanions",
+                "Hearts:DuckNPC": "10",
+                "Hearts:Duck2NPC": "10",
+                "Season":"spring",
+                "Time": "{{Range: 800, 1700}}"
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 26,
+                        "Y": 66
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 3 LemurKat.EastScarpeCompanions.Emperor_Duckling_Swim"
+                    }
+                }
+              
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_EastScarpe",
+            "Update": "OnLocationChange",
+            "When": {
+                "HasMod": "PeacefulEnd.CustomCompanions",
+                "Hearts:DuckNPC": "10",
+                "Hearts:Duck2NPC": "10",
+                "Season":"spring",
+                "Time": "{{Range: 1700, 2100}}"
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 21,
+                        "Y": 63
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "CustomCompanions": "Spawn 3 LemurKat.EastScarpeCompanions.Emperor_Duckling"
+                    }
+                }
+              
             ]
         },
         /* //Adds trapdoor to Mine
@@ -1427,10 +1477,12 @@
                 "HasMod": "Pillow.Luma"
             }
         },
-{ // Adds NPC Map Locations
+        { // Adds NPC Map Locations
             "Action": "Include",
             "FromFile": "assets/Data/NPCMapLocations.json",
-		"When":{"HasMod":"Bouhm.NPCMapLocations"}
+            "When": {
+                "HasMod": "Bouhm.NPCMapLocations"
+            }
         }
     ]
 }

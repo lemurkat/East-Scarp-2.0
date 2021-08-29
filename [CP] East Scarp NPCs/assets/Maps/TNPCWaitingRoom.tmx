@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" width="9" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="76">
  <properties>
-  <property name="Warp" value="0 0 Custom_TNPCWaitingRoom 8 9"/>
+  <property name="Warp" value="0 0 Custom_ES_TNPCWaitingRoom 8 9"/>
  </properties>
  <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
   <image source="townInterior.png" width="512" height="1088"/>
