@@ -71,7 +71,7 @@
 		{
 			"Conditions":
 			[
-				"z spring fall winter/u 12 13 14"
+				"z spring/z fall/z winter/u 12 13 14"
 			],
 			"Location": "Custom_EastScarpe",
 			"Color": { "R": 0, "G": 102, "B": 0, "A": 102 }

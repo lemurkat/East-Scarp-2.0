@@ -229,7 +229,7 @@
     "festivals.jacob.summer11.MrG": "Hello @. Just hanging out here with my good buddy Coppernicus.",
     "festivals.jacob.summer11.tris": "Hello @. Oh, we're just hanging out - two dads, boosting about our girls!$1",
     "festivals.oliver.summer11": "$1 Oliver_Meet#Hi. You're the farmer, right? I'm Oliver. Dad dragged me here to check out this lame-as festival... I'm bored already.$2#$e#I like it here, it's quiet... but I 'spose I'd better head up soon, try the soup. Do you think it'll be any good?$2",
-    "festivals.josephine.summer11": "}$1 Josephine_Meet#Oh, hello! I'm Josephine, the Governor's wife. It's a pleasure to meet you... You haven't seen our son, Oliver around have you?#$e#Hello @! I wish Oliver would be a little more social... He needs some friends that aren't behind a screen.$2",
+    "festivals.josephine.summer11": "$1 Josephine_Meet#Oh, hello! I'm Josephine, the Governor's wife. It's a pleasure to meet you... You haven't seen our son, Oliver around have you?#$e#Hello @! I wish Oliver would be a little more social... He needs some friends that aren't behind a screen.$2",
     "festivals.oliver.summer11.3005": "You know... I'm getting to kinda like this festival. Willy's been telling me some of his fishing yarns.$1",
     "festivals.aideen.summer11": "Oh, the sun is overbearing! I seek sanctuary, here amongst my friends, the trees.",
     "festivals.josephine.summer11.3005": "You haven't seen Olly around have you? If you do, let him know that he'd better spend some time with his parents!$1",
@@ -247,10 +247,14 @@
     //*************
     "festivals.aideen.fall16": "Are you intending to get your fortune told, @?#$b#Oh! I've already had mine! Apparently my quest for a suitor shall be fulfilled before the year reaches its end!$4",
     "festivals.aideen.fall16.spouse": "My love, we do not need a spiritulist to reveal our future!$1#$b#What does it hold? Oh, you shall see tonight.$4",
-    "i18n:festivals.eloise.fall16": "Do you know why these chickens are so tame, farmer @?#$b#It's cos when birds hatch, they think the first thing they see is their mom. It's called 'imprinting'.$3#$b#So Marnie's their mother chicken!$1",
+    "festivals.eloise.fall16": "Do you know why these chickens are so tame, farmer @?#$b#It's cos when birds hatch, they think the first thing they see is their mom. It's called 'imprinting'.$3#$b#So Marnie's their mother chicken!$1",
     "festivals.jacob.fall16": "These chickens look very healthy. Compliments to Ms. Marnie and Shane for raising them well.#$b#They're nicely socialized too.",
     "festivals.eloise.fall16.sve": "Wow, that pumpkin is so big! You could live in it!$3#$b#Did you know pumpkins are technically fruit, @? But you wouldn't put it in a fruit salad! Yuck!$1",
     "festivals.jacob.fall16.sve": "Hello @. Good luck with your display today.",
+    "festivals.ladysheba.fall16.false": "Mirrup?$3",
+    "festivals.ladysheba.fall16.true": "Smell is make hungry. Give food?$3",
+    "festivals.oliver.fall16": "The games? Nah, not really my scene. Sorry, no offence: your fair's cute... but it's not very exciting.$3#$e#Do you think Sam and Sebastian would let me hang out with them?$3",
+    "festivals.josephine.fall16": "Such a lovely little fair. It's almost as charming as the Grampleton Carnival.#$e#Have you ever attended that, @?#$b#No? You should! It's a real festival of wonder. A ferris wheel, wild rides... fireworks! Why, once they even had a dancing bear!$1",
     // Spirit's eve
     //*************
     "festivals.eloise.fall27": "Oh, why can't we go in the maze! We'll look after each other. Puh-lease Dad.$5",
@@ -887,17 +891,17 @@
     "57872011.21": "For long time, friend gull was only friend. But now have @.", //Lexi
     "57872011.22": "And maybe you too, Olly? You will be friend to Lexi?$2", //Lexi
     //Kataryna and Oliver on the beach
-    "57872020.01": "...a joke? Four hours in a bus, with a little brat kicking the seat behind me... and you tell me my niece has sent me on a wild goose chase?", //Kataryna
+    "57872020.01": "...a joke? Four hours in a bus, with a little brat kicking the seat behind me... and you tell me my niece has sent me on a wild goose chase?$a", //Kataryna
     "57872020.02": "I'm sorry, ma'am. Please don't be mad at Kennedy.$3", //Oliver
-    "57872020.03": "I'll be mad at whomever I want. And don't you ma'am me.", //Kataryna
-    "57872020.04": "I should bill you for wasting my time.", //Kataryna
+    "57872020.03": "I'll be mad at whomever I want. And don't you ma'am me.$3", //Kataryna
+    "57872020.04": "I should bill you for wasting my time.$a", //Kataryna
     "57872020.05": "It's a... You're a...", //Kataryna
     "57872020.06": "Name is Lexi. Oliver my friend. And you are big bully!$4",
     "57872020.07": "...absolutely marvellous!", //Kataryna
     "57872020.08": "You not scared? I show you scary face. Many teeth. Grr!$1", //Lexi
     "57872020.09": "Not nearly as scary as the beast that terrorized West Springs. Though that turned out to be a bear with mange. Most disappointing.#$b# But you! You're the real deal, aren't you? This isn't latex or some sort of bizarre wetsuit!", //Kataryna
     "57872020.10": "Please... please don't tell everyone about them.$3#$b#Lexi! I wanted you to stay safe, to stay hidden.$2", //Oliver
-    "57872020.11": "That's why I lied to you Ms. Kataryna. Lexi's my friend, and I don't want anyone to come out here and hunt them.", //Oliver
+    "57872020.11": "That's why I lied to you Ms. Kataryna. Lexi's my friend, and I don't want anyone to come out here and hunt them.$3", //Oliver
     "57872020.12": "Hunt them? Let me assure you, young Oliver...", //Kataryna
     "57872020.13": "...Cryptozoology Today is a well-researched and respectable scientific journal.#$b#And if we have found something of merit to cover... then cover it we shall!", //Kataryna
     "57872020.14": "Lexi is a person and therefore you cannot publish anything without their consent.", //farmer
@@ -907,19 +911,19 @@
     "57872020.18": "A person! It's a... a...", //Kataryna
     "57872020.19": "Lexi might look a little different. But they're definitely a person - and also my friend.", //Oliver
     "57872020.20": "OH!", //Kataryna
-    "57872020.21": "Crpytozoology Today is found in universities across the Ferngill Republic!#$b#It's won numerous awards, and has readerships in the thousands. We could put your little town on the map!", //Kataryna
-    "57872020.22": "Maybe Pelican Town doesn't want to be on the map?", //Oliver
+    "57872020.21": "Crpytozoology Today is found in universities across the Ferngill Republic!#$b#It's won numerous awards, and has readerships in the thousands. We could put your little town on the map!$a", //Kataryna
+    "57872020.22": "Maybe Pelican Town doesn't want to be on the map?$5", //Oliver
     "57872020.23": "But...", //Kataryna
     "57872020.24": "Should I?", //Kataryna
-    "57872020.25": "And who are you, to interrupt a private conversation?", //Kataryna
+    "57872020.25": "And who are you, to interrupt a private conversation?$3", //Kataryna
     "57872020.26": "My father's the Governor.", //Oliver
     "57872020.27": "The Governor!", //Kataryna
     "57872020.28": "And I don't think he'd be very happy if you disrespected the wishes of his only kid.#$b#Your publication receives local funding, right? Would be a shame to lose that.", //Oliver
-    "57872020.29": "Are you threatening me?", //Kataryna
+    "57872020.29": "Are you threatening me?$3", //Kataryna
     "57872020.30": "Just stating a fact.", //Oliver
-    "57872020.31": "I think you should leave now.#$b#Sorry you were dragged all the way out here for nothing.", //Oliver
+    "57872020.31": "I think you should leave now.$5#$b#Sorry you were dragged all the way out here for nothing.$3", //Oliver
     "57872020.32": "Please no hurt friend Oliver!$2", //Lexi
-    "57872020.33": "Okay fine.", //Kataryna
+    "57872020.33": "Okay fine.$2", //Kataryna
     "57872020.34": "Please forgive my impertinence. You have no idea how many times I get called out and it turns out to be a hoax. Or a hermit in a fur coat.#$b#It's extremely rare to meet a genuine cryptid. And even rarer to find one that can hold a conversation.#$b#So, forgive me Lexi, for my manners, or lack there-of.#$b#And if you ever decide you want to go public... well, give me a call or shoot me an email or something.", //Kataryna
     "57872020.35": "An... email?", //Lexi
     "57872020.36": "Or write me a letter. Whatever.#$b#Now, is there a pub or something around here? I could go a cold cider and a bowl of something deep-fried. Any of you folks want to join me?", //Kataryna
@@ -1173,6 +1177,7 @@
     "57873004.07": "Good day! It's a pleasure to make your acquantince, First Lady Josephine. The name's Gunther, curator of our humble library and museum.",
     "57873004.08": "The pleasure is all mine. What a quaint building!$1#$b#Mayor Lewis has indicated you had some real gems amongst your collection.",
     "57873004.09": "Indeed, quite literally, milady. Unfortunately my predecessor left rather suddenly, taking all of them with him.",
+    "57873004.091": "How terrible! I do hope you had insurance.",
     "57873004.10": "We did not, I'm afraid. But our local farmer and intrepid explorer, Mr. @, has been helping restore our collection.^We did not, I'm afraid. But our local farmer and intrepid explorer, Miss @, has been helping restore our collection.",
     "57873004.11": "I'm pleased to hear that. And I'm sure you've done a fine job!$1",
     "57873004.12": "Now, if you'll head this way, milady, I'll show you the collection.",
@@ -1192,39 +1197,39 @@
     "57873004.2.ArchaeologyVisitPart2.04": "...That's what it is! Your walls are rather bare.#$b#Hmm, perhaps I could have a word with my good friend, Lupini, and see if he might donate a few pieces.",
     "57873004.2.ArchaeologyVisitPart2.05": "What do you think?$1",
     //Oliver tells Lexi he has to leave
-    "57872021.01": "Hah! I win!",//Lexi
+    "57872021.01": "Hah! I win!", //Lexi
     "57872021.02": "Lexi, you always win. You're like the king of Sternhalma.$2", //Oliver
-    "57872021.03": "Or maybe queen! Have not decided yet. Is true though, I rule. Play again?$1",//Lexi
+    "57872021.03": "Or maybe queen! Have not decided yet. Is true though, I rule. Play again?$1", //Lexi
     "57872021.04": "Maybe just one more game...$2",
-    "57872021.05": "Oliver-friend, face go all turny-down at corners. Why you sad? Sorry I beat you. Maybe this time, I let you win?$3",//Lexi
-    "57872021.06": "No Lexi. I don't mind that you beat me. Every time.$1#$b#It's just... I'm gonna miss you.$2",//Oliver
-    "57872021.07": "Miss me?",//Lexi
-    "57872021.08": "But you no aim at me?$4",//Lexi
-    "57872021.09": "I have to leave soon. Go back to the city. Zuzu.$2",//Oliver
-    "57872021.10": "You are leaving me, Oliver-friend?$2",//Lexi
-    "57872021.11": "Yeh. Sorry Lexi. Mom's got her big concert, and Dad's a very important man...$3",//Oliver
-    "57872021.12": "But city not good place for Oliver-friend? Air heavy, thick, make lungs hurt.$2#$b#Why you want to leave, Oliver-friend? Is to see friend Kennedy?$4#$b#You come back and visit, yes?$3",//Lexi
-    "57872021.13": "I don't know if I can, Lexi. I'm sorry. Dad's very busy.$3",//Oliver
-    "57872021.14": "But Oliver not busy, and still he let them say what he can and can't do.",//Lexi
-    "57872021.15": "They're my parents!$3",//Oliver
-    "57872021.16": "Mother set me free, she knew her home my cage. Your home, also cage. Stuck like fish in trap.",//Lexi
-    "57872021.17": "It's not that simple Lexi...$5",//Oliver
-    "57872021.18": "Is simple! Oliver want to leave. Never see Lexi-friend again!$4#$b#Is fine. Not need Oliver either. Friend Gull never leave me.$2",//Lexi
-    "57872021.19": "Lexi",//Oliver
-    "57872021.20": "Oh, stop looking so smug, you silly bird.$4",//Oliver
-    "57872021.21": "Hey...",//Oliver
-    "57872021.22": "If you're here to see Lexi, you're out of luck. I upset them. They've gone off to sulk.$3",//Oliver
-    "57872021.23": "I told them I was leaving... I don't want to. More than anything I want to stay here with Lexi. Plus Rosa's baking. And Dr. Jacob...$2#$b#Heck, I'll even miss you!$1",//Oliver
-    "57872021.24": "You should stay. Lexi needs you.",//Farmer
-    "57872021.25": "I'm going to miss you too.",//Farmer
-    "57872021.26": "You'd get bored here soon enough anyway.",//Farmer
-    "57872021.27": "Don't make me feel guilty, @. I know they do. And I need them too.#$b#Kinda crazy, isn't it, that my best friend is the creature from the black lagoon.",//Oliver
-    "57872021.28": "Thanks @. It feels good to know that people actually like me for me. You know? And not just cos I'm the Governor's son.",//Oliver
-    "57872021.29": "Speak for yourself!$4#$b#I don't think I could ever get bored here.",//Oliver
-    "57872021.30": "Heh, I wonder if Dr. Jacob would like to take on an apprentice.",//Oliver
-    "57872021.31": "You're right! That's not a silly idea at all! I should ask him!$1",//Oliver
-    "57872021.32": "Mom's not gonna be too keen on the idea...$2",//Oliver
-    "57872021.33": "Oliver tell me goodbye and I angry at him. Not want him to leave me angry. Tell him I sorry, please?$2#$b#I will miss him lots.$2",//Lexi
+    "57872021.05": "Oliver-friend, face go all turny-down at corners. Why you sad? Sorry I beat you. Maybe this time, I let you win?$3", //Lexi
+    "57872021.06": "No Lexi. I don't mind that you beat me. Every time.$1#$b#It's just... I'm gonna miss you.$2", //Oliver
+    "57872021.07": "Miss me?", //Lexi
+    "57872021.08": "But you no aim at me?$4", //Lexi
+    "57872021.09": "I have to leave soon. Go back to the city. Zuzu.$2", //Oliver
+    "57872021.10": "You are leaving me, Oliver-friend?$2", //Lexi
+    "57872021.11": "Yeh. Sorry Lexi. Mom's got her big concert, and Dad's a very important man...$3", //Oliver
+    "57872021.12": "But city not good place for Oliver-friend? Air heavy, thick, make lungs hurt.$2#$b#Why you want to leave, Oliver-friend? Is to see friend Kennedy?$4#$b#You come back and visit, yes?$3", //Lexi
+    "57872021.13": "I don't know if I can, Lexi. I'm sorry. Dad's very busy.$3", //Oliver
+    "57872021.14": "But Oliver not busy, and still he let them say what he can and can't do.", //Lexi
+    "57872021.15": "They're my parents!$3", //Oliver
+    "57872021.16": "Mother set me free, she knew her home my cage. Your home, also cage. Stuck like fish in trap.", //Lexi
+    "57872021.17": "It's not that simple Lexi...$5", //Oliver
+    "57872021.18": "Is simple! Oliver want to leave. Never see Lexi-friend again!$4#$b#Is fine. Not need Oliver either. Friend Gull never leave me.$2", //Lexi
+    "57872021.19": "Lexi", //Oliver
+    "57872021.20": "Oh, stop looking so smug, you silly bird.$4", //Oliver
+    "57872021.21": "Hey...", //Oliver
+    "57872021.22": "If you're here to see Lexi, you're out of luck. I upset them. They've gone off to sulk.$3", //Oliver
+    "57872021.23": "I told them I was leaving... I don't want to. More than anything I want to stay here with Lexi. Plus Rosa's baking. And Dr. Jacob...$2#$b#Heck, I'll even miss you!$1", //Oliver
+    "57872021.24": "You should stay. Lexi needs you.", //Farmer
+    "57872021.25": "I'm going to miss you too.", //Farmer
+    "57872021.26": "You'd get bored here soon enough anyway.", //Farmer
+    "57872021.27": "Don't make me feel guilty, @. I know they do. And I need them too.#$b#Kinda crazy, isn't it, that my best friend is the creature from the black lagoon.", //Oliver
+    "57872021.28": "Thanks @. It feels good to know that people actually like me for me. You know? And not just cos I'm the Governor's son.", //Oliver
+    "57872021.29": "Speak for yourself!$4#$b#I don't think I could ever get bored here.", //Oliver
+    "57872021.30": "Heh, I wonder if Dr. Jacob would like to take on an apprentice.", //Oliver
+    "57872021.31": "You're right! That's not a silly idea at all! I should ask him!$1", //Oliver
+    "57872021.32": "Mom's not gonna be too keen on the idea...$2", //Oliver
+    "57872021.33": "Oliver tell me goodbye and I angry at him. Not want him to leave me angry. Tell him I sorry, please?$2#$b#I will miss him lots.$2", //Lexi
     // dinner party with Lewis and the Governor
     "57873050.01": "You're here!",
     "57873050.02": "I'm glad you could make it! I'm just putting the finishing touches on a five-course dinner.#$b#Well, when I say finishing up, I mean heating. Gus prepared it. Wouldn't trust my cooking!$1#$b#... Oh, I'm waffling, aren't I!",
@@ -1265,6 +1270,7 @@
     "57873050.DinnerPartyConclusion.12": "I want to stay here. In Pelican Town.",
     "57873050.DinnerPartyConclusion.13": "You what?!",
     "57873050.DinnerPartyConclusion.14": "Mayoral Elections, eh? Quite a sense of humor the Governor has, don't you think?$2",
+    //******************************************************** N E W *****************************************************************
     //Oliver tells his parents he has decided he is not leaving
     "57873048.01": "I told you, Mom, Dad...I'm not leaving!$4#$b#I... I want to stay.$2",
     "57873048.02": "Oh Oliver... as lovely and hospitable as this town has been to us. It's trapped in the past.$2#$b#You've got such a bright future ahead of you. Why throw it all away?",
@@ -1288,4 +1294,36 @@
     "57873048.20": "Not exactly...$2",
     "57873048.21": "Thanks @.$a#$b#And here I thought you were my friend.$2",
     "57873048.22": "Very well, Oliver. You've put forth your case.#$b#I need to discuss matters with your father. And Dr. Jacob.$2",
+    //Josephine leaves
+    "57873005.01": "Well, bye Mom. Yes, I promise I'll write every week. And I'll call you on Zaap. Honest!#$b#Of course I'm going to miss you! But you're gonna kick ah- do great, you know. People love the Songbird!",// Oliver
+    "57873005.02": "Oh Oliver.",//Josephine
+    "57873005.03": "My little champ has all grown up.",//Josephine
+    "57873005.04": "Mom!",// Oliver
+    "57873005.05": "Keep it easy on the cutesy talk, okay? We're in company.",// Oliver
+    "57873005.06": "@. Oh, I'm so pleased to see you before I leave.#$b#Thank you, for everything you've done for me, for Oliver. And for this town.",//Josephine
+    "57873005.07": "You've all been so welcoming, and it has been a pleasure getting to know you all.#$b#There really is nothing quite like country hospitality!$1",//Josephine
+    "57873005.08": "You will look after him, won't you Doctor?",//Josephine
+    "57873005.09": "As if he were my own son.",//Jacob
+    "57873005.10": "I've always wanted a brother!$1",//Eloise
+    "57873005.11": "See Mom? It'll be okay. It will! And it'll be good for us to both spread our wings, right?",// Oliver
+    "57873005.12": "Yes, of course. But... oh, you'll understand one day, Oliver. When you have children of your own.",//Josephine
+    "57873005.13": "Mom, you're being dramatic. Anyhow, it's not like you'll never see me again; you and Dad'll be back for the Luau, right? And Winter Star too.",// Oliver
+    "57873005.14": "Of course!",//Josephine
+    "57873005.15": "And Jacob, Ellie and I will be at your concert!",// Oliver
+    "57873005.16": "Definitely!",
+    "57873005.17": "I'll be there!",
+    "57873005.18": "Oh, I shall miss all of you!$2",//Josephine
+    "57873005.19": "Very well, I suppose this is it. Goodbye every-",//Josephine
+    "57873005.20": "Sorry I'm late, Mrs... sorry, First Lady Josephine!",// Leah
+    "57873005.21": "I have something for you. A little piece of Pelican Town. I thought you might like it for your conservatory.",//Josephine
+    "57873005.22": "It's called 'Egg Heads'.",// Leah
+    "57873005.23": "It's certainly ... unique.",//Josephine
+    "57873005.24": "Thanks. It was a bit of an experimental piece. But I'm rather proud of how it turned out.",// Leah
+    "57873005.25": "It's certainly quirky. Yes, very quirky.",//Josephine
+    "57873005.26": "It's great!",// Oliver
+    "57873005.27": "Thank you very much. I imagine it will be quite the conversation piece.#$b#Well, I had best be off. Goodbye Mayor Lewis, keep up the good work.",//Josephine
+    "57873005.28": "And thank you all, people of Pelican Town.",//Josephine
+    "57873005.29": "Bye Mom. Look after yourself, and Dad too. See you soon.",// Oliver
+    "57873005.30": "Look after them won't you, @. All of them. You're the heart of this community, you know.",//Josephine
+    "57873005.31": "Don't forget Egg Heads!"// Leah
 }

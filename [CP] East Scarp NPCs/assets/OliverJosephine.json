@@ -14,21 +14,6 @@
             }
         },
         {
-            "LogName": "NPC Manifestation - moves warp points",
-            "Action": "EditData",
-            "Target": "Data/NPCDispositions",
-            "Fields": {
-                "OliverK": {
-                    "10": "Custom_ESVetHouse 18 21"
-                }
-            },
-            "When": {
-                "HasSeenEvent": "57873005"
-            }
-        },
-        //57873000 = introductory event
-        //57873005 = event where Oliver moves in with Jacob: end with End Invisible
-        {
             "LogName": "NPC Gift Tastes",
             "Action": "EditData",
             "Target": "Data/NPCGiftTastes",
@@ -80,7 +65,8 @@
             "Action": "EditData",
             "Target": "Characters/schedules/OliverK",
             "Entries": {
-                "Sun": "0 Custom_EastScarpeInn 19 11/1000 Custom_EastScarpeInn 45 10 0 \"Strings\\schedules\\Oliver:Lexi.1\"/1100 Custom_ESSeaCave 30 24 0 \"Strings\\schedules\\Oliver:Lexi.2\"/1700 Custom_EastScarpeInn 33 28 0/2200 Custom_EastScarpeInn 19 11 3 oliverk_sleep"
+                "Sun": "0 Custom_EastScarpeInn 19 11/0700 Custom_EastScarpInn 45 10 0 \"Strings\\schedules\\Oliver:Lexi.1\"/1100 Custom_ESSeaCave 30 24 0 \"Strings\\schedules\\Oliver:Lexi.2\"/1700 Custom_EastScarpeInn 33 28 0/2200 Custom_EastScarpe Inn 19 11 3 oliverk_sleep",
+                "winter_1": "GOTO spring"
             },
             "When": {
                 "HasSeenEvent": "57872012"
@@ -113,6 +99,16 @@
             }
         },
         {
+            "LogName": "Josephine Schedule",
+            "Action": "Load",
+            "Target": "Characters/schedules/JosephineK",
+            "FromFile": "assets/{{Target}}/Josephine_visits.json",
+            "When": {
+                "HasSeenEvent": "57873005"
+               
+            }
+        },
+        {
             "LogName": "Animations",
             "Action": "EditData",
             "Target": "Data/animationDescriptions",
@@ -127,7 +123,6 @@
             "FromFile": "assets/Festivals/Josephine.json",
             "When": {
                 "HasSeenEvent": "57873000",
-                "HasSeenEvent |contains=57873005": false,
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
             }
         },
@@ -235,6 +230,15 @@
             }
         },
         {
+            "Action": "Load",
+            "Target": "Characters/EggHeads",
+            "FromFile": "assets/Images/EggHeads.png",
+            "When": {
+                "HasSeenEvent": "57873000",
+                // "HasSeenEvent |contains=57873005": false
+            }
+        },
+        {
             "Action": "EditData",
             "Target": "Data/Events/BusStop",
             "Entries": {
@@ -243,6 +247,13 @@
             },
             "When": {
                 "HasConversationTopic": "Josephine_Arrives"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/BusStop",
+            "Entries": {
+                "57873005/e 57873048/A JosephineLeaving/t 1000 1500/w sunny": "jaunty/14 14/JosephineK 12 13 1 OliverK 13 13 3 Jacob 16 14 3 Eloise 17 15 3 Lewis 10 13 1 Pierre 9 14 1 Caroline 10 15 1 Pam 11 10 2 Leah -100 -100 3 farmer 0 23 1/skippable/move farmer 12 0 0 true/pause 1000/speak OliverK \"{{i18n:57873005.01}}\"/textAboveHead JosephineK \"{{i18n:57873005.02}}\"/speak JosephineK \"{{i18n:57873005.03}}\"/textAboveHead OliverK \"{{i18n:57873005.04}}\"/speak OliverK \"{{i18n:57873005.05}}\"/emote farmer 16/move farmer 0 -7 0/move OliverK 1 0 2/faceDirection JosephineK 2/speak JosephineK \"{{i18n:57873005.06}}\"/faceDirection JosephineK 3/speak JosephineK \"{{i18n:57873005.07}}\"/emote Lewis 32/move JosephineK 0 1 1/speak JosephineK \"{{i18n:57873005.08}}\"/speak Jacob \"{{i18n:57873005.09}}\"/jump Eloise 3/speak Eloise \"{{i18n:57873005.10}}\"/emote OliverK 32/pause 1000/speak OliverK \"{{i18n:57873005.11}}\"/move JosephineK 0 -1 1/faceDirection OliverK 3/speak JosephineK \"{{i18n:57873005.12}}\"/speak OliverK \"{{i18n:57873005.13}}\"/textAboveHead JosephineK \"{{i18n:57873005.14}}\"/pause 1000/faceDirection OliverK 2/speak OliverK \"{{i18n:57873005.15}}\"/textAboveHead Jacob \"{{i18n:57873005.16}}\"/pause 1000/textAboveHead Pierre \"{{i18n:57873005.17}}\"/speak JosephineK \"{{i18n:57873005.18}}\"/emote Pam 40/animate Pam false false 240 28 29 28 29 28 29 28 29 28 29 28 29/faceDirection JosephineK 0/pause 1000/faceDirection JosephineK 2/speak JosephineK \"{{i18n:57873005.19}}\"/warp Leah 13 23/speed Leah 5/move Leah 0 -8 0/emote Leah 28/pause 2000/speak Leah \"{{i18n:57873005.20}}\"/emote JosephineK 8/speak Leah \"{{i18n:57873005.21}}\"/move Leah 1 0 3/addTemporaryActor EggHeads 16 80 13 15 2 false/animate EggHeads false true 150 0 1 2 3/faceDirection farmer 1/jump JosephineK 3/emote farmer 16/pause 1000/textAboveHead Leah \"{{i18n:57873005.22}}\"/speak JosephineK \"{{i18n:57873005.23}}\"/speak Leah \"{{i18n:57873005.24}}\"/speak JosephineK \"{{i18n:57873005.25}}\"/textAboveHead OliverK \"{{i18n:57873005.26}}\"/faceDirection JosephineK 1/pause 1000/faceDirection JosephineK 2/speak JosephineK \"{{i18n:57873005.27}}\"/speak JosephineK \"{{i18n:57873005.28}}\"/faceDirection OliverK 3/speak OliverK \"{{i18n:57873005.29}}\"/faceDirection JosephineK 2/speak JosephineK \"{{i18n:57873005.30}}\"/emote farmer 60/faceDirection JosephineK 1/faceDirection OliverK 3/move JosephineK 0 -3 1 true/move OliverK 0 -3 3 true/emote JosephineK 20/emote OliverK 60/move JosephineK 0 -1 0/warp JosephineK -100 -100/move Pam 1 0 0/move Pam 0 -1 0/warp Pam -100 -100/textAboveHead Leah \"{{i18n:57873005.31}}\"/pause 1000/fade/viewport -150 -150/playSound busDriveOff/pause 1000/end invisible JosephineK"
             }
         },
         {
@@ -294,7 +305,7 @@
             "Target": "Data/Events/Town",
             "Entries": {
                 "57873014/e 57873000/f JosephineK 20/w sunny/t 900 1600": "continue/26 26/Lewis 24 23 2 JosephineK 25 23 2 farmer 15 31 3/skippable/move farmer 8 0 0 true/pause 1000/speak Lewis \"{{i18n:57873014.01}}\"/speak JosephineK \"{{i18n:57873014.02}}\"/emote Lewis 12/pause 1000/speak Lewis \"{{i18n:57873014.03}}\"/move farmer 0 -7 1 true/speak JosephineK \"{{i18n:57873014.04}}\"/faceDirection Lewis 1/faceDirection Josephine 3/speak Lewis \"{{i18n:57873014.05}}\"/faceDirection Lewis 2/speak Lewis \"{{i18n:57873014.06}}\"/emote farmer 32/speak Lewis \"{{i18n:57873014.07}}\"/emote JosephineK 20/speak JosephineK \"{{i18n:57873014.08}}\"/emote farmer 56/speak JosephineK \"{{i18n:57873014.09}}\"/pause 1000/faceDirection JosephineK 3/faceDirection Lewis 1/speak JosephineK \"{{i18n:57873014.10}}\"/emote Lewis 28/speak JosephineK \"{{i18n:57873014.11}}\"/speak Lewis \"{{i18n:57873014.12}}\"/move Lewis 0 1 1/move JosephineK 0 1 3/emote JosephineK 32/speak JosephineK \"{{i18n:57873014.13}}\"/pause 500/move JosephineK 8 0 0 true/move Lewis 8 0 0 true/move farmer 8 0 0 true/viewport move 2 0 1500/pause 3000/fade/viewport -100 -100/switchEvent CommunityCenterJosephine",
-                "57873048/e 57873050/t 1800 2300": "nightTime/61 88/Governor 64 88 2 JosephineK 63 88 3 OliverK 62 89 1 farmer -100 -100 2 Lewis -101 -101 2/skippable/pause 500/advancedMove OliverK true 3 0 3 3000 -3 0 1 3000/speak OliverK \"{{i18n:57873048.01}}\"/speak JosephineK \"{{i18n:57873048.02}}\"/pause 500/faceDirection JosephineK 1/pause 1000/faceDirection JosephineK 2/speak JosephineK \"{{i18n:57873048.03}}\"/stopAdvancedMoves/faceDirection OliverK 0/jump OliverK 3/textAboveHead OliverK \"{{i18n:57873048.04}}\"/shake OliverK 1000/pause 500/speak OliverK \"{{i18n:57873048.05}}\"/pause 500/emote JosephineK 40/pause 500/speak OliverK \"{{i18n:57873048.06}}\"/pause 1000/speak JosephineK \"{{i18n:57873048.07}}\"/speak OliverK \"{{i18n:57873048.08}}\"/speak Governor \"{{i18n:57873048.09}}\"/pause 500/faceDirection JosephineK 1/emote JosephineK 12/pause 1000/faceDirection JosephineK 2/emote OliverK 28/pause 1000/playSound doorOpen/warp farmer 58 86/warp Lewis 59 86/faceDirection Lewis 3/faceDirection farmer 1/speak Lewis \"{{i18n:57873048.10}}\"/pause 500/jump farmer/emote farmer 16/pause 500/faceDirection Lewis 1/emote Lewis 8/pause 1000/move farmer 0 3 1/faceDirection OliverK 3/speak OliverK \"{{i18n:57873048.11}}\"/move farmer 3 0 1 true/move OliverK -3 0 3 true/faceDirection JosephineK 2/quickQuestion #{{i18n:57873048.12}}#{{i18n:57873048.13}}#{{i18n:57873048.14}}#{{i18n:57873048.15}}(break)emote OliverK 12\\pause 500\\speak JosephineK \"{{i18n:57873048.16}}\"(break)emote OliverK 32\\friendship OliverK 50\\pause 500\\speak OliverK \"{{i18n:57873048.17}}\"\\speak OliverK \"{{i18n:57873048.18}}\"(break)faceDirection JosephineK 3\\speak JosephineK \"{{i18n:57873048.19}}\"\\emote OliverK 60\\speak OliverK \"{{i18n:57873048.20}}\"(break)emote OliverK 12\\friendship OliverK -50\\pause 500\\speak OliverK \"{{i18n:57873048.21}}\"/pause 1000/speak JosephineK \"{{i18n:57873048.22}}\"/emote OliverK 28/pause 1000/end"
+                "57873048/e 57873050/t 1800 2300": "nightTime/61 88/Governor 64 88 2 JosephineK 63 88 3 OliverK 62 89 1 farmer -100 -100 2 Lewis -101 -101 2/skippable/addConversationTopic JosephineLeaving 3/pause 500/advancedMove OliverK true 3 0 3 3000 -3 0 1 3000/speak OliverK \"{{i18n:57873048.01}}\"/speak JosephineK \"{{i18n:57873048.02}}\"/pause 500/faceDirection JosephineK 1/pause 1000/faceDirection JosephineK 2/speak JosephineK \"{{i18n:57873048.03}}\"/stopAdvancedMoves/faceDirection OliverK 0/jump OliverK 3/textAboveHead OliverK \"{{i18n:57873048.04}}\"/shake OliverK 1000/pause 500/speak OliverK \"{{i18n:57873048.05}}\"/pause 500/emote JosephineK 40/pause 500/speak OliverK \"{{i18n:57873048.06}}\"/pause 1000/speak JosephineK \"{{i18n:57873048.07}}\"/speak OliverK \"{{i18n:57873048.08}}\"/speak Governor \"{{i18n:57873048.09}}\"/pause 500/faceDirection JosephineK 1/emote JosephineK 12/pause 1000/faceDirection JosephineK 2/emote OliverK 28/pause 1000/playSound doorOpen/warp farmer 58 86/warp Lewis 59 86/faceDirection Lewis 3/faceDirection farmer 1/speak Lewis \"{{i18n:57873048.10}}\"/pause 500/jump farmer/emote farmer 16/pause 500/faceDirection Lewis 1/emote Lewis 8/pause 1000/move farmer 0 3 1/faceDirection OliverK 3/speak OliverK \"{{i18n:57873048.11}}\"/move farmer 3 0 1 true/move OliverK -3 0 3 true/faceDirection JosephineK 2/quickQuestion #{{i18n:57873048.12}}#{{i18n:57873048.13}}#{{i18n:57873048.14}}#{{i18n:57873048.15}}(break)emote OliverK 12\\pause 500\\speak JosephineK \"{{i18n:57873048.16}}\"(break)emote OliverK 32\\friendship OliverK 50\\pause 500\\speak OliverK \"{{i18n:57873048.17}}\"\\speak OliverK \"{{i18n:57873048.18}}\"(break)faceDirection JosephineK 3\\speak JosephineK \"{{i18n:57873048.19}}\"\\emote OliverK 60\\speak OliverK \"{{i18n:57873048.20}}\"(break)emote OliverK 12\\friendship OliverK -50\\pause 500\\speak OliverK \"{{i18n:57873048.21}}\"/pause 1000/speak JosephineK \"{{i18n:57873048.22}}\"/emote OliverK 28/pause 1000/end"
             }
         },
         {
@@ -346,7 +357,7 @@
             "Action": "EditData",
             "Target": "Data/Events/ArchaeologyHouse",
             "Entries": {
-                "57873004/f JosephineK 750/w sunny/t 1000 1600": "{{season}}_day_ambient/-1000 -1000/farmer -50 -50 3 Gunther -50 -50 1 JosephineK -50 -50 0 Lewis -50 -50 1/skippable/changeLocation Town/warp Lewis 101 90 true/warp JosephineK 104 90 true/viewport 101 89/pause 500/speak JosephineK \"{{i18n:57873004.01}}\"/speak Lewis \"{{i18n:57873004.02}}\"/pause 500/jump JosephineK 3/faceDirection JosephineK 3/textAboveHead JosephineK \"{{i18n:57873004.03}}\"/speak JosephineK \"{{i18n:57873004.04}}\"/move Lewis -1 0 1/move JosephineK -3 0 0/textAboveHead Lewis \"{{i18n:57873004.05}}\"/playSound doorOpen/pause 1000/warp JosephineK -50 -50/move Lewis 1 0 0/fade/viewport -1000 -1000/changeLocation ArchaeologyHouse/warp farmer 5 10 true/warp Gunther 4 10 true/stopMusic/viewport 12 12/playSound doorOpen/playMusic libraryTheme/warp JosephineK 3 14/pause 500/move JosephineK 0 -1 1/pause 500/move JosephineK 1 0 3/pause 500/faceDirection JosephineK 0/textAboveHead JosephineK \"{{i18n:57873004.06}}\"/faceDirection Gunther 2/jump Gunther 5/emote Gunther 16/faceDirection farmer 2/warp Lewis 3 14/move Gunther 0 1 2 true/move Lewis 0 -1 1 true/speak Gunther \"{{i18n:57873004.07}}\"/move Gunther 0 1 2/pause 1000/speak JosephineK \"{{i18n:57873004.08}}\"/speak Gunther \"{{i18n:57873004.09}}\"/speak JosephineK  \"How terrible! I do hope you had insurance.\"/speak Gunther \"{{i18n:57873004.10}}\"/jump farmer 3/move farmer 0 2 2/move JosephineK 1 0 0/speak JosephineK \"{{i18n:57873004.11}}\"/emote farmer 32/pause 1000/faceDirection JosephineK 0/speak Gunther \"{{i18n:57873004.12}}\"/faceDirection farmer 1/faceDirection Josephine 1/fade/viewport 3 0 500/fade/viewport -1000 -1000/warp Gunther 38 7 true/warp farmer 28 8 true/warp Lewis 30 8 true/warp JosephineK 31 8 true/faceDirection farmer 1/faceDirection Lewis 1/faceDirection JosephineK 1/viewport 38 8/pause 1000/move JosephineK 3 0 0/emote JosephineK 8/move Lewis 2 0 1 true/move farmer 2 0 1 true/faceDirection JosephineK 2/pause 500/move JosephineK 3 0 0/move Lewis 3 0 1 true/move farmer 3 0 1 true/pause 1000/faceDirection JosephineK 2/pause 500/emote JosephineK 40/pause 1000/faceDirection JosephineK 1/pause 1000/switchEvent ArchaeologyVisitPart2",
+                "57873004/f JosephineK 750/w sunny/t 1000 1600": "{{season}}_day_ambient/-1000 -1000/farmer -50 -50 3 Gunther -50 -50 1 JosephineK -50 -50 0 Lewis -50 -50 1/skippable/changeLocation Town/warp Lewis 101 90 true/warp JosephineK 104 90 true/viewport 101 89/pause 500/speak JosephineK \"{{i18n:57873004.01}}\"/speak Lewis \"{{i18n:57873004.02}}\"/pause 500/jump JosephineK 3/faceDirection JosephineK 3/textAboveHead JosephineK \"{{i18n:57873004.03}}\"/speak JosephineK \"{{i18n:57873004.04}}\"/move Lewis -1 0 1/move JosephineK -3 0 0/textAboveHead Lewis \"{{i18n:57873004.05}}\"/playSound doorOpen/pause 1000/warp JosephineK -50 -50/move Lewis 1 0 0/fade/viewport -1000 -1000/changeLocation ArchaeologyHouse/warp farmer 5 10 true/warp Gunther 4 10 true/stopMusic/viewport 12 12/playSound doorOpen/playMusic libraryTheme/warp JosephineK 3 14/pause 500/move JosephineK 0 -1 1/pause 500/move JosephineK 1 0 3/pause 500/faceDirection JosephineK 0/textAboveHead JosephineK \"{{i18n:57873004.06}}\"/faceDirection Gunther 2/jump Gunther 5/emote Gunther 16/faceDirection farmer 2/warp Lewis 3 14/move Gunther 0 1 2 true/move Lewis 0 -1 1 true/speak Gunther \"{{i18n:57873004.07}}\"/move Gunther 0 1 2/pause 1000/speak JosephineK \"{{i18n:57873004.08}}\"/speak Gunther \"{{i18n:57873004.09}}\"/speak JosephineK \"{{i18n:57873004.091}}\"/speak Gunther \"{{i18n:57873004.10}}\"/jump farmer 3/move farmer 0 2 2/move JosephineK 1 0 0/speak JosephineK \"{{i18n:57873004.11}}\"/emote farmer 32/pause 1000/faceDirection JosephineK 0/speak Gunther \"{{i18n:57873004.12}}\"/faceDirection farmer 1/faceDirection Josephine 1/fade/viewport 3 0 500/fade/viewport -1000 -1000/warp Gunther 38 7 true/warp farmer 28 8 true/warp Lewis 30 8 true/warp JosephineK 31 8 true/faceDirection farmer 1/faceDirection Lewis 1/faceDirection JosephineK 1/viewport 38 8/pause 1000/move JosephineK 3 0 0/emote JosephineK 8/move Lewis 2 0 1 true/move farmer 2 0 1 true/faceDirection JosephineK 2/pause 500/move JosephineK 3 0 0/move Lewis 3 0 1 true/move farmer 3 0 1 true/pause 1000/faceDirection JosephineK 2/pause 500/emote JosephineK 40/pause 1000/faceDirection JosephineK 1/pause 1000/switchEvent ArchaeologyVisitPart2",
                 "ArchaeologyVisitPart2": "speak JosephineK \"{{i18n:57873004.ArchaeologyVisitPart2.01}}\"/emote Gunther 12/speak Gunther \"{{i18n:57873004.ArchaeologyVisitPart2.02}}\"/faceDirection JosephineK 2/pause 500/faceDirection JosephineK 3/pause 500/faceDirection JosephineK 1/pause 500/speak JosephineK \"{{i18n:57873004.ArchaeologyVisitPart2.03}}\"/textAboveHead Gunther \"{{i18n:57873004.ArchaeologyVisitPart2.04}}\"/faceDirection Lewis 1/emote Lewis 40/emote farmer 60/pause 1000/end"
             }
         },
@@ -387,7 +398,7 @@
                 "AwkwardMayorTalk": "pause 500/speak Governor \"{{i18n:57873050.AwkwardMayorTalk.01}}\"/emote Lewis 12/pause 1000/speak Governor \"{{i18n:57873050.AwkwardMayorTalk.02}}\"/emote Governor 40/speak Governor \"{{i18n:57873050.AwkwardMayorTalk.03}}\"/emote Lewis 12/emote farmer 40/quickQuestion #{{i18n:57873050.AwkwardMayorTalk.04}}#{{i18n:57873050.AwkwardMayorTalk.05}}#{{i18n:57873050.AwkwardMayorTalk.06}}(break)emote Lewis 28\\friendship Lewis -125\\speak Governor \"{{i18n:57873050.AwkwardMayorTalk.07}}\"(break)speak Governor \"{{i18n:57873050.AwkwardMayorTalk.08}}\"(break)emote Lewis 32\\friendship Lewis 125\\speak Governor \"{{i18n:57873050.AwkwardMayorTalk.09}}\"/switchEvent DinnerPartyConclusion",
                 "DinnerPartyConclusion": "pause 400/speak Governor \"{{i18n:57873050.DinnerPartyConclusion.01}}\"/faceDirection Governor 1/move JosephineK 0 1 3/emote Governor 20/emote JosephineK 20/move JosephineK -1 0 0/faceDirection Governor 0/speak Governor \"{{i18n:57873050.DinnerPartyConclusion.02}}\"/move Lewis -1 0 2/emote Lewis 28/speak Governor \"{{i18n:57873050.DinnerPartyConclusion.03}}\"/pause 500/speak OliverK \"{{i18n:57873050.DinnerPartyConclusion.04}}\"/speak Governor \"{{i18n:57873050.DinnerPartyConclusion.05}}\"/textAboveHead OliverK \"{{i18n:57873050.DinnerPartyConclusion.06}}\"/emote farmer 60/speak JosephineK \"{{i18n:57873050.DinnerPartyConclusion.07}}\"/move Governor -2 0 0/speak Governor \"{{i18n:57873050.DinnerPartyConclusion.08}}\"/faceDirection Governor 1/textAboveHead Governor \"{{i18n:57873050.DinnerPartyConclusion.09}}\"/move Governor -4 0 1 true/move JosephineK -4 0 3 true/move Lewis -4 0 2 true/pause 2000/textAboveHead Governor \"{{i18n:57873050.DinnerPartyConclusion.10}}\"/pause 1000/emote OliverK 12/speak OliverK \"{{i18n:57873050.DinnerPartyConclusion.11}}\"/stopMusic/jump Governor 5/emote Governor 12/speak OliverK \"{{i18n:57873050.DinnerPartyConclusion.12}}\"/pause 500/textAboveHead Governor \"{{i18n:57873050.DinnerPartyConclusion.13}}\"/pause 3000/end dialogue Lewis \"{{i18n:57873050.DinnerPartyConclusion.14}}\""
             }
-        }
+        },
         /*{
             "Action": "EditData",
             "Target": "Data/Events/ManorHouse",
@@ -398,5 +409,21 @@
                 "AwkwardMayorTalk": "pause 500/speak Governor \"Now, Lewis, I hear your position has been usurped!$1\"/emote Lewis 12/pause 1000/speak Governor \"Grampleton are beginning their election campaigns next week. Interesting, times, don't you think?\"/emote Governor 40/speak Governor \"Actually, Lewis my boy, when was the last time you held an election here? Five, ten years ago?#$b#And no one's stood against you ever since?#$b#Heh, maybe it's time for a little shake-up! What do you think, err, @, right? You seem like a capable character. Fancy a stint as Mayor?\"/emote Lewis 12/emote farmer 40/quickQuestion #Oh, I'd give Lewis a run for his money.#I guess we'd have to wait and see.#I can't imagine anyone but Lewis as Mayor.(break)emote Lewis 28\\friendship Lewis -125\\speak Governor \"Oh, by jove, that would be fun, wouldn't it! Office worker, turned farmer, turned mayor!$1\"(break)speak Governor \"That we would! Ah, but who might stand against him?! Sometimes you might be surprised at who might come out the woodwork.$1\"(break)emote Lewis 32\\friendship Lewis 125\\speak Governor \"You've definitely earned your loyalty here, Mayor Lewis!\"/switchEvent DinnerPartyConclusion",
             }
         }*/
+        {
+            "LogName": "Oliver Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/OliverK",
+            "Entries": {
+                "Sun": "0 Custom_ESVetHouse 18 21 2/0700 Custom_ESVetHouse 31 16 0 \"Strings\\schedules\\Oliver:Lexi.1\"/1000 Custom_ESSeaCave 30 24 0 \"Strings\\schedules\\Oliver:Lexi.2\"/1700 Custom_ESVetHouse 24 15 0/2200 Custom_ESVetHouse 18 21 3 oliverk_sleep",
+                "rain": "0 Custom_ESVetHouse 18 21 2/900 Custom_ESVetHouse 23 22 0/0700 Custom_ESVetHouse 31 16 0 0/1100 Custom_ESJacobBarn 14 6 3/1300 1300 Custom_EastScarpeInn 25 12 2 square_5_1_2/1800 Custom_ESVetHouse 22 25 1 oliverk_computer/2200 Custom_ESVetHouse 18 21 3 oliverk_sleep",
+                "spring": "0 Custom_ESVetHouse 18 21 2/800 Custom_ESVetHouse 23 22 0/1000 Custom_EastScarpe 47 70 3/1500 Custom_EastScarpe 14 123 2/1800 Custom_ESVetHouse 24 15 0/2200 Custom_ESVetHouse 18 21 3 oliverk_sleep",
+                "Tue": "MAIL JacobOliverWork/GOTO spring/0 Custom_ESVetHouse 18 21 2/800 Custom_ESVetHouse 23 22 0/1000 Custom_EastScarpe 28 32 3/1140 Custom_ES_VetAwayWarp 6 5 2/1800 Custom_ESVetHouse 22 25 1 oliverk_computer/2200 Custom_ESVetHouse 18 21 3 oliverk_sleep",
+                "Sat": "Custom_ESVetHouse 18 21 2/900 Custom_ESVetHouse 23 22 0/1000 Custom_EastScarpe 31 63 3/1300 Custom_EastScarpe 10 109 2/1600 Custom_EastScarpeInn 28 13 3/1900 Custom_ESVetHouse 22 25 1 oliverk_computer",
+                "summer_6":"Custom_ESVetHouse 18 21 2/900 Custom_ESVetHouse 23 22 0/a1200 Custom_EastScarpe 40 69 2/1400 Custom_EastScarpe 30 111 2/1700 BusStop 15 12 3/2030 Custom_ESVetHouse 18 21 3 oliverk_sleep"
+            },
+            "When": {
+                "HasSeenEvent": "57873005"
+            }
+        },
     ]
 }

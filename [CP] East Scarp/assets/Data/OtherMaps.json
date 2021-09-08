@@ -30,6 +30,20 @@
                 "HasMod |contains=DaisyNiko.SVR2": true
             }
         },
+        { // Seven Deadly Sins
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "FromFile": "assets/Patches/ES_rev_SDS.tmx",
+            "ToArea": {
+                "X": 109,
+                "Y": 63,
+                "Width": 11,
+                "Height": 14
+            },
+            "When": {
+                "HasMod |contains=ricehit.SDSMAPSP": true
+            }
+        },
         { //Mountain > Deep Mountains
             "Action": "EditMap",
             "Target": "Maps/Mountain",

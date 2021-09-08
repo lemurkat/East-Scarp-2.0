@@ -172,6 +172,30 @@
                 "OliverK": "{{i18n:festivals.oliver.summer28.2012}}",
                 "Leximonster":"{{i18n:festivals.lexi.summer28}}"
             }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 54 75 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "fair Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/fall16",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.fall16}}"
+            }
         }
+           
     ]
 }

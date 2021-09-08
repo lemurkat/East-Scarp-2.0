@@ -103,7 +103,6 @@
 				"OliverK": "teen/polite/shy/neutral/male/not-datable//Other//JosephineK 'mother'/Custom_ES_TNPCWaitingRoomWarp 6 5/{{i18n:Name.Oliver}}",
 				"JosephineK": "adult/polite/neutral/positive/female/not-datable/GovernorK/Other//OliverK 'son'/Custom_ES_TNPCWaitingRoomWarp 7 5/{{i18n:Name.Josephine}}",
 				"RichieTheMacaw": "adult/rude/outgoing/negative/male/not-datable//other///Custom_ESVetHouse 8 21/{{i18n:Name.Richie}}",
-				"Kataryna": "adult/rude/outgoing/positive/female/not-datable//Other///Custom_ES_TNPCWaitingRoomWarp 2 5/{{i18n:Name.Kataryna}}",
 				"LadySheba": "teen/rude/shy/negative/female/not-datable//other///Custom_ES_CatWarpRoom 2 3/{{i18n:Name.Sheba}}"
 			}
 		},
@@ -133,6 +132,21 @@
 			"When": {
 				"HasSeenEvent |contains=57873000": "True",
 				"HasSeenEvent |contains=57873005": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_ESVetHouse",
+			"FromFile": "assets/Maps/VetHouse_Oliver.tmx",
+			"Update": "OnLocationChange",
+			"ToArea": {
+				"X": 17,
+				"Y": 17,
+				"Width": 8,
+				"Height": 11
+			},
+			"When": {
+				"HasSeenEvent |contains=57873005": "true"
 			}
 		},
 		/**************** Resident NPCs
@@ -366,6 +380,13 @@
 			}
 		},
 		{
+			"Action": "Include",
+			"FromFile": "assets/Festivals/LadySheba.json",
+			"When": {
+				"HasSeenEvent": "57879903"
+			}
+		},
+		{
 			"LogName": "Animations",
 			"Action": "EditData",
 			"Target": "Data/animationDescriptions",
@@ -423,6 +444,9 @@
 			"Target": "Data/NPCDispositions",
 			"Entries": {
 				"Beatrice": "adult/neutral/shy/negative/female/non-datable/null/Town/spring 17//Custom_ESLighthouse 11 10/{{i18n:Name.Beatrice}}"
+			},
+			"When": {
+				"HasMod": "attonbomb.Beatrice"
 			}
 		},
 		{
@@ -442,6 +466,9 @@
 				"fall_12": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/900 Custom_ESLighthouse 5 5 0/930 ArchaeologyHouse 18 9 2 Beatrice_stool \"Strings\\schedules\\Beatrice:read.002\"/1440 Saloon 19 23 3/1600 Custom_ESLighthouse 2 10 3/1900 Custom_ESLighthouse 18 4 0",
 				"winter_12": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/900 Custom_ESLighthouse 5 5 0/930 ArchaeologyHouse 18 9 2 Beatrice_stool \"Strings\\schedules\\Beatrice:read.002\"/1440 Saloon 19 23 3/1600 Custom_ESLighthouse 2 10 3/1800 Custom_ESLighthouse 18 4 0",
 				"summer": "610 Custom_ESLighthouse 11 10 0 Beatrice_pjs \"Strings\\schedules\\Beatrice:sleep\"/1100 Custom_EastScarpe 22 102 1/1300 Custom_EastScarpe 55 84 2 Beatrice_read/1500 Custom_ESLighthouse 11 5 0/1600 Custom_ESLighthouse 21 6 1/1700 Custom_ESLighthouse 5 5 0/2000 Custom_ESLighthouse 18 4 0"
+			},
+			"When": {
+				"HasMod": "attonbomb.Beatrice"
 			}
 		},
 		{
@@ -456,6 +483,9 @@
 				"Resort_Wander": "These parrots, they are beautiful!",
 				"Resort_Bar": "Merci, Gus. Will you join me for a drink, @?",
 				"Resort": "My Raoul would so have loved this place. Ah, he had an adventuring 'eart, 'e did."
+			},
+			"When": {
+				"HasMod": "attonbomb.Beatrice"
 			}
 		},
 		{
@@ -487,7 +517,7 @@
 			"Action": "EditData",
 			"Target": "Data/Events/Farm",
 			"Entries": {
-				"57873000/j 153/z summer/z winter/z spring/u 28/Hn Oliver_Meet/Hn Josephine_Meet/t 600 900": "continue/64 15/farmer 64 16 2 Lewis 64 18 0/addConversationTopic Josephine_Arrives 1/addConversationTopic Josephine_Introduction 7/pause 1500/speak Lewis \"{{i18n:57873000.01}}\"/pause 500/emote farmer 8/pause 1500/speak Lewis \"{{i18n:57873000.02}}\"/pause 500/jump farmer 3/emote farmer 16/pause 1500/speak Lewis \"{{i18n:57873000.03}}\"/emote farmer 60/speak Lewis \"{{i18n:57873000.04}}\"/pause 500/emote farmer 40/quickQuestion #{{i18n:57873000.q1}}#{{i18n:57873000.q2}}#{{i18n:57873000.q3}}#{{i18n:57873000.q4}}(break)emote Lewis 24\\pause 1000\\speak Lewis \"{{i18n:57873000.r1}}\"(break)emote Lewis 40\\pause 500\\speak Lewis \"{{i18n:57873000.r2}}\"(break)emote Lewis 28\\pause 500\\speak Lewis \"{{i18n:57873000.r3}}\"(break)emote Lewis 12\\speak Lewis \"{{i18n:57873000.r4}}\"/pause 1000/speak Lewis \"{{i18n:57873000.05}}\"/pause 1500/faceDirection Lewis 2/emote farmer 28/pause 1000/end"
+				"57873000/j 153/z summer/z winter/z spring/u 28/Hn Oliver_Meet/Hn Josephine_Meet": "continue/64 15/farmer 64 16 2 Lewis 64 18 0/addConversationTopic Josephine_Arrives 1/addConversationTopic Josephine_Introduction 7/pause 1500/speak Lewis \"{{i18n:57873000.01}}\"/pause 500/emote farmer 8/pause 1500/speak Lewis \"{{i18n:57873000.02}}\"/pause 500/jump farmer 3/emote farmer 16/pause 1500/speak Lewis \"{{i18n:57873000.03}}\"/emote farmer 60/speak Lewis \"{{i18n:57873000.04}}\"/pause 500/emote farmer 40/quickQuestion #{{i18n:57873000.q1}}#{{i18n:57873000.q2}}#{{i18n:57873000.q3}}#{{i18n:57873000.q4}}(break)emote Lewis 24\\pause 1000\\speak Lewis \"{{i18n:57873000.r1}}\"(break)emote Lewis 40\\pause 500\\speak Lewis \"{{i18n:57873000.r2}}\"(break)emote Lewis 28\\pause 500\\speak Lewis \"{{i18n:57873000.r3}}\"(break)emote Lewis 12\\speak Lewis \"{{i18n:57873000.r4}}\"/pause 1000/speak Lewis \"{{i18n:57873000.05}}\"/pause 1500/faceDirection Lewis 2/emote farmer 28/pause 1000/end"
 			}
 		}
 		/* Event Key:

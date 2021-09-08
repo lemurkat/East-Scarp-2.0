@@ -1,5 +1,13 @@
 {
     "Changes": [
+        {
+			"LogName": "NPC Manifestation",
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Entries": {
+				"Kataryna": "adult/rude/outgoing/positive/female/not-datable//Other///Custom_ES_TNPCWaitingRoomWarp 2 5/{{i18n:Name.Kataryna}}"
+			}
+		},
         { //Kataryna
             "LogName": "Kataryna",
             "Action": "Load",

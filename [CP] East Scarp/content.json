@@ -567,7 +567,7 @@
             ],
             "When": {
                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
-                "HasMod |contains=LemurKat.JulietHouse.NPC": true
+               // "HasMod |contains=LemurKat.JulietHouse.NPC": true
             }
         },
         //Is Meadow Farm enabled

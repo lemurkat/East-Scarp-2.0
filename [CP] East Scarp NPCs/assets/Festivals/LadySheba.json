@@ -1,0 +1,28 @@
+{
+    "Changes": [
+        {
+            
+                "Action": "EditData",
+                "Target": "Data/Festivals/fall16",
+                "TextOperations": [
+                    {
+                        "Operation": "Append",
+                        "Target": [
+                            "Entries",
+                            "Set-Up_additionalCharacters"
+                        ],
+                        "Value": "LadySheba 56 52 2",
+                        "Delimiter": "/"
+                    }
+                ]
+            },
+            {
+                "LogName": "fair Dialogue",
+                "Action": "EditData",
+                "Target": "Data/Festivals/fall16",
+                "Entries": {
+                    "LadySheba": "{{i18n:festivals.ladysheba.fall16.{{cattalk}}}}"
+                }
+        }
+    ]
+}
