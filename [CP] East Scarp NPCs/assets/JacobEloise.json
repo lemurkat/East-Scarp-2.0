@@ -118,8 +118,8 @@
             "Action": "EditData",
             "Target": "Characters/Dialogue/rainy",
             "Entries": {
-                "Eloise": "I love the rain, don't you? Dad doesn't even mind if I stomp in puddles - as long as I wear my gumboots!",
-                "Jacob": "Ellie gets so restless on rainy days, she hates being confined indoors. Between her and Pepper... well, let's just say I spend a lot of time mopping!"
+                "Eloise": "{{i18n:rain.eloise}}", 
+                "Jacob": "{{i18n:rain.jacob}}"
             }
         },
         /*{   "Action": "EditData",
@@ -164,7 +164,7 @@
             "Action": "EditData",
             "Target": "Strings/schedules/Jas",
             "Entries": {
-                "ellie.000": "Hear that noisy bird? It's a jerjar bird! He's my friend.$4"
+                "ellie.000": "{{i18n:strings.jas.ellise.000}}"
             }
         },
         {
@@ -549,6 +549,41 @@
                 "HasSeenEvent |contains=57870014": true,
                 "HasSeenEvent |contains=57870015, 69660015": false
             }
-        }
+        },
+/* {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Penny",
+      "When": {
+        "HasMod": "Lemurkat.JacobEloise.CP"
+      },
+      "Entries": {
+        "Tue": "I'm tutoring the kids today... They're a handful, but it's nice to make a difference in someone's life.",
+        "Wed": "We don't have a school but I'm doing my best to give the children here a proper education.#$e#Every child deserves a chance to be successful.#$e#Jas is very good at math and reading and sometimes I can't keep up with Eloise. Vincent is good at... well, he has an active imagination!"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/Penny",
+      "When": {
+        "HasMod": "Lemurkat.JacobEloise.CP,\r\n\t\t   gizzymo.canonfriendlyexpansion"
+      },
+      "Entries": {
+        "summer_Wed": "We don't do a full summer vacation, because we have to make up for our short school weeks during the regular year.#$e#Jodi, Marnie and Jacob requested we do it that way, instead of doing things the way a normal school would.",
+        "Thu2": "It's nice just having so few students. We get a little more flexibility with when we meet for class.",
+        "Wed6": "Ms. Eleanor was my teacher when I was growing up. A lot of the things I teach the children, I learned from her.#$e#I've also learned a lot just from the books in the library.",
+        "Wed8": "It's tough trying to fill the shoes of the woman who had my job before me, but having only a handful students makes it a bit easier.#$e#Ms. Eleanor had nine of us one year. There were just more kids in town when I was growing up.",
+        "fall_Mon6": "Maybe I could find a job as a full classroom teacher someday. But I don't know that it would be better for me.#$e#I just can't imagine having the same connections with twenty or thirty students like I have with the children here."
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/GuntherSilvian",
+      "When": {
+        "HasMod": "Lemurkat.JacobEloise.CP, FlashShifter.StardewValleyExpandedCP"
+      },
+      "Entries": {
+        "Sat": "Penny tutors the children in the library several days a week.$5"
+      }
+    }*/
     ]
 }

@@ -33,7 +33,8 @@
     "Strings.EastScarpe.5": "It's an older boat, but very well cared for. There are fish heads in the bottom.",
     "Strings.EastScarpe.6": "This looks exactly like the sort of bridge a troll might live under.",
     "Strings.EastScarpe.7": "You cast your eyes out across the shimmering waters, somewhere out there are the Fern Islands. Perhaps one day you'll get to visit them.",
-    "Strings.EastScarpe.8": "A tabby cat glares at you. She looks frightened. Better leave her alone.",
+    "Strings.EastScarpe.8.false": "A tabby cat glares at you. She looks frightened. Better leave her alone.",
+    "Strings.EastScarpe.8.true": "You're not entirely sure, but Lady Sheba doesn't appear to be home.",
     "Strings.EastScarpe.9": "You push open the door and peer in. There's nothing inside except a chair, a tattered notebook and a pair of binoculars. There's a long narrow opening facing out into the forest.",
     "Strings.EastScarpe.10": "It's an old silo, converted into a house. Who could live here? Sadly, the door is locked.",
     "Strings.EastScarpe.11": "The writing is worn and hard to read, you can just make out, 'Cher   Orc   '.", //"Cherry Orchards" with missing letters

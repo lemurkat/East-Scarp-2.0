@@ -205,7 +205,16 @@
     "movies.rosa.8": "Okay well then... back to my creaky old inn room. Certainly won't be hearing monsters scratching tonight.$2",
     "movies.rosa.9": "This place is so cute! 'Though I bet the cleaner's kept busy scraping up bird droppings.",
     "movies.rosa.10": "Thanks for inviting me, @. It's nice to have a friend in this town.$1",
-    //****************************************************************
+    //************************************************************************
+    // R A I N   D I A L O G U E
+    //**********************************
+    "rain.eloise": "I love the rain, don't you? Dad doesn't even mind if I stomp in puddles - as long as I wear my gumboots!",
+    "rain.jacob": "Ellie gets so restless on rainy days, she hates being confined indoors. Between her and Pepper... well, let's just say I spend a lot of time mopping!",
+    //*************************************************************************
+    // S T R I N G S
+    //******************
+    "strings.jas.ellise.000":"Hear that noisy bird? It's a jerjar bird! He's my friend.$4",
+    //*************************************************************************
     // F E S T I V A L   D I A L O G U E
     //**********************************
     // egg festival
@@ -663,7 +672,7 @@
     "57870008.01": "Who are you?",
     "57870008.02": "That's my seat!$3",
     "57870008.03": "I'm Leo. I'm sorry, I didn't mean to take your seat.$2",
-    "57870008.04": "Oh, that's okay. I don't mind sitting next to Vinny.$1",
+    "57870008.04": "Oh, that's okay. I don't mind sitting next to Vinnie.$1",
     "57870008.05": "I like your clothes... Do you collect feathers too?$3",
     "57870008.06": "They were gifts... from my... my bird family.",
     "57870008.07": "Your bird family? You have a bird family? Like pets? What species? Were they parrots? Those look like parrot feathers!$3",
@@ -696,7 +705,7 @@
     "57870009.01": "Who are you?",
     "57870009.02": "That's my seat!$3",
     "57870009.03": "I'm Cecily. Gunther's my dad, and I live with him now.#$b#Sorry if I took your seat. I didn't know there were other kids here.$2",
-    "57870009.04": "That's okay. I don't mind sitting next to Vinny.$1",
+    "57870009.04": "That's okay. I don't mind sitting next to Vinnie.$1",
     "57870009.05": "But aren't you a bit big for middle school?$3",
     "57870009.06": "Excuse me girls, but it's time for today's lesson...",
     "57870009.07": "Today we're going to learn a little about...",
@@ -1295,35 +1304,35 @@
     "57873048.21": "Thanks @.$a#$b#And here I thought you were my friend.$2",
     "57873048.22": "Very well, Oliver. You've put forth your case.#$b#I need to discuss matters with your father. And Dr. Jacob.$2",
     //Josephine leaves
-    "57873005.01": "Well, bye Mom. Yes, I promise I'll write every week. And I'll call you on Zaap. Honest!#$b#Of course I'm going to miss you! But you're gonna kick ah- do great, you know. People love the Songbird!",// Oliver
-    "57873005.02": "Oh Oliver.",//Josephine
-    "57873005.03": "My little champ has all grown up.",//Josephine
-    "57873005.04": "Mom!",// Oliver
-    "57873005.05": "Keep it easy on the cutesy talk, okay? We're in company.",// Oliver
-    "57873005.06": "@. Oh, I'm so pleased to see you before I leave.#$b#Thank you, for everything you've done for me, for Oliver. And for this town.",//Josephine
-    "57873005.07": "You've all been so welcoming, and it has been a pleasure getting to know you all.#$b#There really is nothing quite like country hospitality!$1",//Josephine
-    "57873005.08": "You will look after him, won't you Doctor?",//Josephine
-    "57873005.09": "As if he were my own son.",//Jacob
-    "57873005.10": "I've always wanted a brother!$1",//Eloise
-    "57873005.11": "See Mom? It'll be okay. It will! And it'll be good for us to both spread our wings, right?",// Oliver
-    "57873005.12": "Yes, of course. But... oh, you'll understand one day, Oliver. When you have children of your own.",//Josephine
-    "57873005.13": "Mom, you're being dramatic. Anyhow, it's not like you'll never see me again; you and Dad'll be back for the Luau, right? And Winter Star too.",// Oliver
-    "57873005.14": "Of course!",//Josephine
-    "57873005.15": "And Jacob, Ellie and I will be at your concert!",// Oliver
+    "57873005.01": "Well, bye Mom. Yes, I promise I'll write every week. And I'll call you on Zaap. Honest!#$b#Of course I'm going to miss you! But you're gonna kick ah- do great, you know. People love the Songbird!", // Oliver
+    "57873005.02": "Oh Oliver.", //Josephine
+    "57873005.03": "My little champ has all grown up.", //Josephine
+    "57873005.04": "Mom!", // Oliver
+    "57873005.05": "Keep it easy on the cutesy talk, okay? We're in company.", // Oliver
+    "57873005.06": "@. Oh, I'm so pleased to see you before I leave.#$b#Thank you, for everything you've done for me, for Oliver. And for this town.", //Josephine
+    "57873005.07": "You've all been so welcoming, and it has been a pleasure getting to know you all.#$b#There really is nothing quite like country hospitality!$1", //Josephine
+    "57873005.08": "You will look after him, won't you Doctor?", //Josephine
+    "57873005.09": "As if he were my own son.", //Jacob
+    "57873005.10": "I've always wanted a brother!$1", //Eloise
+    "57873005.11": "See Mom? It'll be okay. It will! And it'll be good for us to both spread our wings, right?", // Oliver
+    "57873005.12": "Yes, of course. But... oh, you'll understand one day, Oliver. When you have children of your own.", //Josephine
+    "57873005.13": "Mom, you're being dramatic. Anyhow, it's not like you'll never see me again; you and Dad'll be back for the Luau, right? And Winter Star too.", // Oliver
+    "57873005.14": "Of course!", //Josephine
+    "57873005.15": "And Jacob, Ellie and I will be at your concert!", // Oliver
     "57873005.16": "Definitely!",
     "57873005.17": "I'll be there!",
-    "57873005.18": "Oh, I shall miss all of you!$2",//Josephine
-    "57873005.19": "Very well, I suppose this is it. Goodbye every-",//Josephine
-    "57873005.20": "Sorry I'm late, Mrs... sorry, First Lady Josephine!",// Leah
-    "57873005.21": "I have something for you. A little piece of Pelican Town. I thought you might like it for your conservatory.",//Josephine
-    "57873005.22": "It's called 'Egg Heads'.",// Leah
-    "57873005.23": "It's certainly ... unique.",//Josephine
-    "57873005.24": "Thanks. It was a bit of an experimental piece. But I'm rather proud of how it turned out.",// Leah
-    "57873005.25": "It's certainly quirky. Yes, very quirky.",//Josephine
-    "57873005.26": "It's great!",// Oliver
-    "57873005.27": "Thank you very much. I imagine it will be quite the conversation piece.#$b#Well, I had best be off. Goodbye Mayor Lewis, keep up the good work.",//Josephine
-    "57873005.28": "And thank you all, people of Pelican Town.",//Josephine
-    "57873005.29": "Bye Mom. Look after yourself, and Dad too. See you soon.",// Oliver
-    "57873005.30": "Look after them won't you, @. All of them. You're the heart of this community, you know.",//Josephine
-    "57873005.31": "Don't forget Egg Heads!"// Leah
+    "57873005.18": "Oh, I shall miss all of you!$2", //Josephine
+    "57873005.19": "Very well, I suppose this is it. Goodbye every-", //Josephine
+    "57873005.20": "Sorry I'm late, Mrs... sorry, First Lady Josephine!", // Leah
+    "57873005.21": "I have something for you. A little piece of Pelican Town. I thought you might like it for your conservatory.", //Josephine
+    "57873005.22": "It's called 'Egg Heads'.", // Leah
+    "57873005.23": "It's certainly ... unique.", //Josephine
+    "57873005.24": "Thanks. It was a bit of an experimental piece. But I'm rather proud of how it turned out.", // Leah
+    "57873005.25": "It's certainly quirky. Yes, very quirky.", //Josephine
+    "57873005.26": "It's great!", // Oliver
+    "57873005.27": "Thank you very much. I imagine it will be quite the conversation piece.#$b#Well, I had best be off. Goodbye Mayor Lewis, keep up the good work.", //Josephine
+    "57873005.28": "And thank you all, people of Pelican Town.", //Josephine
+    "57873005.29": "Bye Mom. Look after yourself, and Dad too. See you soon.", // Oliver
+    "57873005.30": "Look after them won't you, @. All of them. You're the heart of this community, you know.", //Josephine
+    "57873005.31": "Don't forget Egg Heads!" // Leah
 }

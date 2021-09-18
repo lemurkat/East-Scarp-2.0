@@ -14,7 +14,7 @@
 				"EastScarpe.5": "{{i18n:Strings.EastScarpe.5}}",
 				"EastScarpe.6": "{{i18n:Strings.EastScarpe.6}}.",
 				"EastScarpe.7": "{{i18n:Strings.EastScarpe.7}}",
-				"EastScarpe.8": "{{i18n:Strings.EastScarpe.8}}",
+				"EastScarpe.8": "{{i18n:Strings.EastScarpe.8.{{LadyShebaFriend}}}}",
 				"EastScarpe.9": "{{i18n:Strings.EastScarpe.9}}",
 				"EastScarpe.10": "{{i18n:Strings.EastScarpe.10}}",
 				"EastScarpe.11": "{{i18n:Strings.EastScarpe.11}}",

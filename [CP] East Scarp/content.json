@@ -235,7 +235,20 @@
             "When": {
                 "Season": "winter"
             }
-        }
+        },
+        {
+            "Name": "LadyShebaFriend",
+            "Value": "false",
+          
+        },
+        {
+            "Name": "LadyShebaFriend",
+            "Value": "true",
+            "When": {
+                "HasSeenEvent": "57879903"
+            }
+        },
+
     ],
     "Changes": [
         { // Adds map to overworld (work in progress)

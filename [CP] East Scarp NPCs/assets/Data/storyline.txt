@@ -247,6 +247,62 @@ Farmer can advise:
 - plants don't drink seawater.
 - perhaps it doesn't like your singing?
 
+8 hearts:
+Lexi talks about the time when they lived with Mother, in a big rambling house with many rooms. Lexi would sometimes sneak out early in the morning for a swim. One day, they followed the river and found themselves at the beach.
+It was quiet, and felt safe, until they got to the edge of the ocean, and the waves crashed against the shore. They were scared.
+But there was a girl. Well a woman. She came to the beach and stripped off her outside skin, then plunged into the waves, not even slightly scared!
+Lexi was awed. But they remembered how the last time one of the people from the village had seen them, and screamed.
+So they stayed hidden.
+After that, always when Lexi came to the beach, they would look for the young woman. 
+Then one day, the woman got pulled out to sea in a riptide, and Lexi realised that she was in trouble.
+They dove into the sea without a thought, and rescued her, bringing her back to shore.
+The woman was started to see Lexi, but she did not seem scared. More intrigued.
+Her name was Mona, a name Lexi liked because it was close to Moana, which they knew meant the sea.
+They became friends.
+
+Starts with Lexi standing on the beach, maybe the headland, staring out to sea. Rainy day, so no one around.
+"Oh, sorry friend @! Is lost in thoughts. Remembering an old friend."
+emote farmer ?
+speak Leximonster \"Would you like to hear tale?\"/
+emote farmer :)
+faceDirection Leximonster 2/
+speak Leximonster \"It is an old tale. Happen many, many years ago. When I was child.
+Lived in big house with Mother. Had many rooms and books and other things. I love Mother very much, but not love be indoors. Love outside; rain on face and wind on whisker-gill.
+But not save to go out when sun high in sky. Sun too hot, make skin feel bad. And too many eyes to see. Too many voices to scream 'Monster'!
+In dawn, when sky painted in orange-pink, I would swim. In river, swim to beach, collect shells for Mother.
+	(switch to location: beach, Lexi's head appear in river to sea, then Lexi climb out, walk to rock pools.
+	Use a temp beach map with Elliott's cabin removed, maybe a few other changes?
+	Use autumn one for morning hues, maybe try changing light levels?
+	Set to "indoor" so no rain.)
+But was very silly; for though I love water... am fraid of waves.
+Then one day, came to swim, and found no longer had place alone.
+        (show a little play where Mona wanders onto the beach, looks around. Lexi ducks into the bushes. Mona then walks into the water.
+	Swims back and forth.)
+Fade to black
+She come every day. Would watch her. Want to talk to her, be friends. But scared.
+Not good memory of people friends.
+One day come to swim... and everything change.
+	(Mona swimming back and forth then suddenly she disappears. Lexi jumps with a ! and runs to the shore. They hesitate for a moment, shaking. Mona's head appears, with a 'help' emote above it. Then she disappears again.
+	Lexi jumps in the ocean, swims out to her.
+Fade to black
+speak Leximonster \"Not scared of wave! More scared she drown. Bring her to shore. She cough, cough up water. Then look up at me. I think she scream.
+She not.\"/
+	(Mona kneeling, Lexi standing in front of her. (note: make shorter Lexi sprites)
+	"You saved me!" Mona stands up, looks Lexi in the eye.
+	emote Lexichild 60
+	"Thank you."
+	textAboveHead Lexichild \"Is okay.\"/
+	textAboveHead Monateen \"My name is Mona.\"/
+	textAboveHead Lexichild \"I is Lexi.\"/
+	textAboveHead Monateen \"Pleased to meet you.\"/
+fade back to Lexi and farmer standing on the cliff
+speak Leximonster \"We become friends. Swim together. Race, play games together. Was happy. But after time, things change.#$b#Mona find her mate, spend more time in mountains than in sea. Decide to go to sea, find mate of own. 
+But that story for different day. Today, remember good times, not sad times.\"/
+face each other, smile, then return to staring out to sea.
+	
+
+
+ 
 ***********************************************
 Oliver
 ***********************************************
